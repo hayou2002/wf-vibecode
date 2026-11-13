@@ -251,15 +251,17 @@
       },
       "recorded": "2026-11-13",
       "uses": "涉及「好不好看」时转过去(另一个工作流)",
-      "digest": "sha256:4fe491f03a7e3f64bd003ae2af18502724c33a2a842dc413df7f7b005b22fd02",
+      "digest": "sha256:db4f883e1190cd8ed701e7305b411770d15847e680a8208c1718cffc9c382e54",
       "files": {
         ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
-        "README.md": "sha256:37ac740f72284ef6140cb4e6138fb1b1dcd443207ff772c5b42f0bc95f7453ec",
+        "assets/readme/hero.svg": "sha256:72d55ed557979ceb2b3b2d9c9123bf7da263440ea20c0efe9c1769e63238198f",
+        "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
+        "README.md": "sha256:c078df2928c72ff00cda35ed929106768d378eb36103a2a2d588167a7f2b4072",
         "references/environment.md": "sha256:a85df5b1c00b6e64307a0aab095a33c9477e8ece5b71d03350cc7f21a09b1657",
         "references/habits.md": "sha256:744de1942373455727d412d5789e6886bad6df38e86b9a5dc667795d2d3a825d",
         "references/playbook.md": "sha256:28153b615ffd42d5af5c8a3a9e87fbf30ffd3dab4b9b472a5e73a01061155145",
         "scripts/design_check.py": "sha256:fdc6d2bba23a3fb001534b2d6d90ec0969b6788a6192f3d516659c0e82871c35",
-        "SKILL.md": "sha256:238eedf7a08cbb7f270ff0a0bf297e6107e20c310432ee82d9d9e9f7cb991af2",
+        "SKILL.md": "sha256:085c84194ea255edfcc83f984f23d227792f633a2557cc29142ac7d9df231bf4",
         "sources.json": "sha256:368eb65405b2a9b4a7def2f3e6bf0ed88195bc87f29499404bc28df2eda77924"
       }
     },
@@ -274,15 +276,17 @@
       },
       "recorded": "2026-11-13",
       "uses": "车道 5:整理本地 git、传仓库、发版本(另一个工作流,引用不重写)",
-      "digest": "sha256:f341c7d6a851283f8431215d61013099c0c2b1d168687c04c9c857db04b4a6d9",
+      "digest": "sha256:05cfb64d5fb97098e2a68594c6a30af195debc4640e6ba8db4fdab6069e267bb",
       "files": {
         ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
-        "README.md": "sha256:abd0e84ed0ff41178f750062ac62701e531993dd7e0c53c05425922071c1b32e",
+        "assets/readme/hero.svg": "sha256:1d6fe7c194078b1ef5240c4a7e743c9244709c7f91751a6841e942fbeec00e7e",
+        "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
+        "README.md": "sha256:0a7d161b3efce5428d0b134692905a3fc34b53fe984ffabb9bb1d0e56d5c8cae",
         "references/environment.md": "sha256:a884c66a85699ffcc84e942ffc8b3601698fcfb03603a980955b71508edacc12",
-        "references/habits.md": "sha256:9796c23bec62a02d4ba819c0307a70f9ac151911d0e84c3f9ddf4a8cd47a3daf",
-        "references/playbook.md": "sha256:9e3d4913d8aa1a930ad4a0d7a64ba8d98fe967cda05b363aff6af234f894faab",
+        "references/habits.md": "sha256:39e5c3e4e41146f73f902bf4cb5ffcae1acdda3bee65eb49368823128bd19ba8",
+        "references/playbook.md": "sha256:8a91d9b87e5b4b79662ea19316ccae593bf1e7f0adb094a19d926f78fa010994",
         "scripts/repo_scan.py": "sha256:46f86209451e045dee28a6cede870f2f0c1aa78266cd8a290c2cd1738f9b54c6",
-        "SKILL.md": "sha256:3bad1be9be5d66f762482fba5eafd2048b9f864e90892004631634fb520258fe",
+        "SKILL.md": "sha256:ea55f56e0085fe4f17562924d9a89d5b24e71366ac844df979079b6392f4db0f",
         "sources.json": "sha256:6e557fc28f151ab1e0ffc2877d1c41967aa7611aa6f70909af4f0e3df87ba88a"
       }
     }
