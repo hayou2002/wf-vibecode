@@ -2,7 +2,7 @@
 
 > 由 wf-maker 生成，请勿手改；要改就改 `sources.json` 后重跑 `wf.py env`。
 
-更新时间：2026-11-13
+更新时间：2026-11-14
 
 ## 技能依赖
 
@@ -17,6 +17,7 @@
 | oil-govern | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-govern | npx skills add oil-oil/oil-dev-skills --skill oil-govern |
 | oil-plan | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-plan | npx skills add oil-oil/oil-dev-skills --skill oil-plan |
 | vibehub | 引用 | GitHub oil-oil/vibe-hub-skill › skills/vibehub | npx skills add oil-oil/vibe-hub-skill --skill vibehub |
+| webapp-testing | 引用 | GitHub anthropics/skills › skills/webapp-testing | npx skills add anthropics/skills --skill webapp-testing |
 | wf-design | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
 | wf-github-ops | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
 

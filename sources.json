@@ -3,7 +3,7 @@
   "title": "日常 Vibe Coding",
   "status": "active",
   "created": "2026-11-13",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "sources": [
     {
       "name": "codex-vibecoding",
@@ -230,14 +230,38 @@
         "root": "library",
         "rel": "vibehub"
       },
-      "recorded": "2026-11-13",
-      "uses": "跨切面：把口语需求说成准确术语",
+      "recorded": "2026-11-14",
+      "uses": "步骤 1：表述模糊时把需求翻准、术语讲清；随手抓到的术语也补记",
       "digest": "sha256:0fd2989d222e89745818d7e51876277be090cbf0f28e9e9e830ed36553494f7f",
       "files": {
         "agents/openai.yaml": "sha256:18d92bcac85cc90093638a6835d79836e18dc398c605df17b8a3bd18d24350ad",
         "scripts/vibehub.mjs": "sha256:2fa5e50399647f82a8a7837e04669eef22be1922a8d749d56e6e85b36ef5926f",
         "SKILL.md": "sha256:51587bb757227f9653106d6db10e77bd12740f4d22de604759a957f1bc024e86",
         "vibehub.config.json": "sha256:d1ec9be8d2037ba1400757fdd732fd9e793757cc51ddc59cfd5c1f2de3e50457"
+      }
+    },
+    {
+      "name": "webapp-testing",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "anthropics/skills",
+        "subpath": "skills/webapp-testing",
+        "commit": "",
+        "label": "anthropics/skills 官方",
+        "root": "shared",
+        "rel": "webapp-testing"
+      },
+      "recorded": "2026-11-14",
+      "uses": "步骤 6：web 界面真浏览器验证（可选）",
+      "digest": "sha256:d80f9df9fc93796408fbc2722414264d4f4b4eb36656a5738fd494698cae378e",
+      "files": {
+        "examples/console_logging.py": "sha256:f06fbca7cdfa44ecf5bae40813b30fc758ec3280af1aab5586aa2dd384db7ad6",
+        "examples/element_discovery.py": "sha256:7e99c7caf1593a75a8b2e36847128c41962fefc604f7947426581c2b9fc2361b",
+        "examples/static_html_automation.py": "sha256:6633d0b7c3b3bef31e6baa9cef6fac57490767ee481702fe11c281d8d013b769",
+        "LICENSE.txt": "sha256:52b223c318576d65c32f70cb745f31352730e9f4c2c2c2570a66ce700f4f5a64",
+        "scripts/with_server.py": "sha256:529b5f10f6ecf2e6234747be6d6601be7ef9011ee29a3eee0879e7823f608238",
+        "SKILL.md": "sha256:8bc27790f6e6dfc2bfa6692326d4518baacf6a31dcc646d963c729adad2f7e34"
       }
     },
     {
@@ -249,9 +273,9 @@
         "root": "shared",
         "rel": "wf-design"
       },
-      "recorded": "2026-11-13",
+      "recorded": "2026-11-14",
       "uses": "涉及「好不好看」时转过去(另一个工作流)",
-      "digest": "sha256:fe9eb345fe1067b3a47522bb4b799c112b1e6d4f11b6bbb71d31b23974f7da05",
+      "digest": "sha256:0f013a2da8e83a20e46006129edb54fc55e8eb6eedd2dbcad623397e94a8a3c8",
       "files": {
         ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
         "assets/readme/hero.svg": "sha256:72d55ed557979ceb2b3b2d9c9123bf7da263440ea20c0efe9c1769e63238198f",
@@ -259,14 +283,14 @@
         "README.md": "sha256:59fea6efb654e43a3ae9890eb8af691994a988f0c96ae67c6db5e4a32d12f468",
         "references/environment.md": "sha256:a85df5b1c00b6e64307a0aab095a33c9477e8ece5b71d03350cc7f21a09b1657",
         "references/habits.md": "sha256:aad1df77ea370c2f6bacac4862c53569dfbd964484190e32559c9b21d30ed952",
-        "references/playbook.md": "sha256:44cd3288ab8c15b8e79b2438f2c4fe9a76c481e76c498ec831de8a25f1da187e",
+        "references/playbook.md": "sha256:99cf2b7993e12776b39fc112a65a9331ed9999bc1cd2b7da2aecb73abe1ddc29",
         "references/sops/_template.md": "sha256:51c7eed7f5ecfa3663335c9e16dc4e99fbee7c7e908206757d947f0a4bef304d",
-        "references/sops/index.md": "sha256:72f4bf8446baa2ab0759900bf3f190c45b627c691fab611a3e02cf0875ba9619",
+        "references/sops/index.md": "sha256:f59cf7d1c2cb080998e9ef71631d92183eca7bd1d30e749d2ad3a50bc6724533",
         "references/sops/note-organization.md": "sha256:62744e47f59699e7f868aae54aeeff4c1b0804a803d4b8f4a34c116a1661e2df",
-        "scripts/design_check.py": "sha256:fdc6d2bba23a3fb001534b2d6d90ec0969b6788a6192f3d516659c0e82871c35",
-        "scripts/note_check.py": "sha256:fa9a7614ee28939bd6eccfd2b2c7593fa330a23a8d644e1c622e79ef130dfeb6",
+        "scripts/design_check.py": "sha256:412c32c62594ab0b9932cc78a57a2aa256e720a4d8248b7a2fa9311f7f459045",
+        "scripts/note_check.py": "sha256:efdec9b88adefdbad4f75df23574cd6299bbf7f41fbe5daf786aff489acea4b2",
         "scripts/siyuan_note.py": "sha256:e7e83e486bc0834ebfda6312c81586c5d43c081b4f0ea602d2279f065c09cf47",
-        "SKILL.md": "sha256:f2488b5307ce5f283258e06de9461f21be4bc63940b398efdd3ee008127aa5da",
+        "SKILL.md": "sha256:416bbfce037aa6d0c785476198cbf40e898681b024905844919b840f6e7208f9",
         "sources.json": "sha256:368eb65405b2a9b4a7def2f3e6bf0ed88195bc87f29499404bc28df2eda77924"
       }
     },
@@ -279,22 +303,22 @@
         "root": "shared",
         "rel": "wf-github-ops"
       },
-      "recorded": "2026-11-13",
+      "recorded": "2026-11-14",
       "uses": "车道 5:整理本地 git、传仓库、发版本(另一个工作流,引用不重写)",
-      "digest": "sha256:05cfb64d5fb97098e2a68594c6a30af195debc4640e6ba8db4fdab6069e267bb",
+      "digest": "sha256:4cd3b30e17240a44724507911722bccbf26f395eaca960d97cfad126289753f6",
       "files": {
         ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
         "assets/readme/hero.svg": "sha256:1d6fe7c194078b1ef5240c4a7e743c9244709c7f91751a6841e942fbeec00e7e",
         "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
-        "README.md": "sha256:0a7d161b3efce5428d0b134692905a3fc34b53fe984ffabb9bb1d0e56d5c8cae",
+        "README.md": "sha256:000b1c4f67340575f679b9c68dec790f7aa4b7afbb957918f7a918c10075a0e3",
         "references/environment.md": "sha256:a884c66a85699ffcc84e942ffc8b3601698fcfb03603a980955b71508edacc12",
-        "references/habits.md": "sha256:39e5c3e4e41146f73f902bf4cb5ffcae1acdda3bee65eb49368823128bd19ba8",
-        "references/playbook.md": "sha256:8a91d9b87e5b4b79662ea19316ccae593bf1e7f0adb094a19d926f78fa010994",
-        "scripts/repo_scan.py": "sha256:46f86209451e045dee28a6cede870f2f0c1aa78266cd8a290c2cd1738f9b54c6",
-        "SKILL.md": "sha256:ea55f56e0085fe4f17562924d9a89d5b24e71366ac844df979079b6392f4db0f",
+        "references/habits.md": "sha256:15613b9d9fc6a2afb7cd25c53ab7279c3f43034b0a0db1d5a998255b6a86d7d1",
+        "references/playbook.md": "sha256:500cff08f8109f764a3cdd75f5e51d0d41081ad75324c1d2f41daa7a2be8d823",
+        "scripts/repo_scan.py": "sha256:f366214db8e8990f44dddf37cdca862cdc455f3e0df9f0e0c50237b910622176",
+        "SKILL.md": "sha256:d5b1bb31ee33d6b42614b01bf3d440247083365db8d0a8aebc1b597c9f867541",
         "sources.json": "sha256:6e557fc28f151ab1e0ffc2877d1c41967aa7611aa6f70909af4f0e3df87ba88a"
       }
     }
   ],
-  "env_digest": "9533dd34b0aee975cddb55f958ac0d3943d3a2fe8514ea909e5485ff56dd26cc"
+  "env_digest": "0e4b7c74207e7660fda3d862d683a8d4f070165c721fc7bee17f917d36090386"
 }

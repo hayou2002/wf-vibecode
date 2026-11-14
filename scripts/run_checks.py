@@ -7,6 +7,10 @@
 
 默认只列不跑；真要执行必须显式加 --yes。只运行识别到的白名单检查名，
 不做清理、不装依赖、不碰 git。
+
+退出码：0（通过）/ 1（命中：有检查失败）/ 2（跑不动：目录或用法不对）。
+单项「跑不了」（工具没装）不算失败，按 0 走，结论行里说明。
+最后验证：2026-11-14，list / run（未确认）/ 目录错误三条路径实测。
 """
 
 from __future__ import annotations
@@ -149,7 +153,8 @@ def run_one(item: dict, root: Path, timeout: int) -> dict:
 def cmd_list(args) -> int:
     root = Path(args.project)
     if not root.is_dir():
-        raise SystemExit(f"不是目录：{root}")
+        print(f"结论：跑不动（退出码 2：不是目录：{root}）")
+        return 2
     items = detect(root)
     if args.json:
         print(json.dumps(items, ensure_ascii=False, indent=2))
@@ -157,30 +162,35 @@ def cmd_list(args) -> int:
     if not items:
         print("没认出这个项目自带的检查命令。")
         print("先看它的 AGENTS.md、README 和 CI 配置，用项目自己的命令跑，不要套用记忆里的。")
+        print("结论：通过（退出码 0：没认出检查命令）")
         return 0
     print(f"{root} 里认到这些检查：")
     width = max(len(item["name"]) for item in items)
     for item in items:
         print(f"  {item['name']:<{width}}  {item['command']}   （来自 {item['source']}）")
     print("\n确认后再执行：加 --yes。")
+    print(f"结论：通过（退出码 0：认出 {len(items)} 项检查，待确认执行）")
     return 0
 
 
 def cmd_run(args) -> int:
     root = Path(args.project)
     if not root.is_dir():
-        raise SystemExit(f"不是目录：{root}")
+        print(f"结论：跑不动（退出码 2：不是目录：{root}）")
+        return 2
     items = detect(root)
     if args.only:
         items = [item for item in items if item["name"] == args.only]
     if not items:
         print("没有要跑的检查。先用 `list` 看看认到了什么。")
+        print("结论：通过（退出码 0：没有要跑的检查）")
         return 0
     if not args.yes:
         print("这会真的执行下面的命令：")
         for item in items:
             print(f"  {item['command']}")
         print("\n确认没问题就加 --yes 再跑一次。")
+        print("结论：通过（退出码 0：已列出待执行，加 --yes 才真的跑）")
         return 0
     results = [run_one(item, root, args.timeout) for item in items]
     failed = [item for item in results if item["exit_code"] not in (0, None)]
@@ -206,6 +216,10 @@ def cmd_run(args) -> int:
             print(f"    {line}")
     print(f"\n共 {len(results)} 项，失败 {len(failed)} 项，跑不了 {len(skipped)} 项。")
     print("把上面这些命令和退出码写进交付说明，就是这次的真实验证证据。")
+    if failed:
+        print(f"结论：命中（退出码 1：失败 {len(failed)} 项）")
+    else:
+        print(f"结论：通过（退出码 0：通过 {len(results) - len(skipped)} 项，跑不了 {len(skipped)} 项）")
     return 1 if failed else 0
 
 
