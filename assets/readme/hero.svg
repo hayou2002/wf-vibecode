@@ -1,11 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="wf-vibecode:能做小的就不做大,做完给证据">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">wf-vibecode 工作流示意</title>
+  <desc id="hero-desc">需求说不清先翻成准话,再按 T0/T1/T2 分档动手;做完留下能验证的证据。</desc>
   <rect width="1200" height="340" rx="24" fill="#F5FBF8"/>
   <rect x="1" y="1" width="1198" height="338" rx="23" fill="none" stroke="#D6EDE2"/>
   <rect x="72" y="56" width="196" height="30" rx="15" fill="#DDF2E9"/>
   <text x="88" y="77" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" letter-spacing="2" fill="#0F7A56">WORKFLOW SKILL</text>
   <text x="70" y="150" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="58" font-weight="700" fill="#0E1F18">wf-vibecode</text>
   <text x="72" y="196" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#4F6E62">能做小的就不做大,做完给证据</text>
-  <text x="72" y="242" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#6E8B7F">先摸现场 · 先找可复用的 · 不覆盖你的改动</text>
+  <text x="72" y="242" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#6E8B7F">需求说不清先翻准 · 先复用再发明 · 不覆盖你的改动</text>
   <text x="72" y="272" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#6E8B7F">改代码不等于允许 push、部署、花钱</text>
 
   <g font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif">
@@ -20,8 +22,8 @@
     <rect x="632" y="244" width="396" height="56" rx="14" fill="#0F7A56"/>
     <text x="660" y="279" font-size="20" fill="#FFFFFF">T2 全流程</text>
 
-    <text x="1052" y="143" font-size="17" fill="#6E8B7F">直接改</text>
-    <text x="944" y="211" font-size="17" fill="#6E8B7F">一片 + 验证</text>
-    <text x="1052" y="279" font-size="17" fill="#6E8B7F">契约 + 回归</text>
+    <text x="1052" y="143" font-size="18" fill="#6E8B7F">直接改</text>
+    <text x="944" y="211" font-size="18" fill="#6E8B7F">一片 + 验证</text>
+    <text x="1052" y="279" font-size="18" fill="#6E8B7F">契约 + 回归</text>
   </g>
 </svg>
