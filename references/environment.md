@@ -2,7 +2,7 @@
 
 > 由 wf-maker 生成，请勿手改；要改就改 `sources.json` 后重跑 `wf.py env`。
 
-更新时间：2026-11-14
+更新时间：2026-11-17
 
 ## 技能依赖
 
@@ -10,6 +10,7 @@
 | --- | --- | --- | --- |
 | codex-vibecoding | 引用 | GitHub hayou2002/codex-vibecoding | npx skills add hayou2002/codex-vibecoding |
 | git-ship | 引用 | GitHub oil-oil/git-ship | npx skills add oil-oil/git-ship |
+| oil-bug-fix | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-bug-fix | npx skills add oil-oil/oil-dev-skills --skill oil-bug-fix |
 | oil-code-review | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-code-review | npx skills add oil-oil/oil-dev-skills --skill oil-code-review |
 | oil-delegate | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-delegate | npx skills add oil-oil/oil-dev-skills --skill oil-delegate |
 | oil-explore | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-explore | npx skills add oil-oil/oil-dev-skills --skill oil-explore |
@@ -21,6 +22,14 @@
 | wf-design | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
 | wf-github-ops | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
 
+## 自定义配置
+
+第一次用到下面这些技能或工作流时,先问用户一次,再把结果记到对应位置;不改技能文件,不记密钥值。
+
+| 技能 | 需要你定的事 | 记在哪 | 状态 |
+| --- | --- | --- | --- |
+| oil-delegate | 委派给哪个 CLI、各用途交给谁 | ~/.oil-dev/preferences.md | 待配置 |
+
 ## 凭据与配置
 
 本清单不记录任何密钥值。需要你自行准备的项目：
@@ -31,4 +40,5 @@
 
 1. 按上表逐项安装或确认技能已就位。
 2. 用 `wf.py check <工作流>` 核对每个技能的版本是否和登记时一致。
-3. 凭据按「凭据与配置」一节自行准备，不要写进本目录。
+3. 按「自定义配置」逐项确认；待配置的先问用户，不要替用户选。
+4. 凭据按「凭据与配置」一节自行准备，不要写进本目录。

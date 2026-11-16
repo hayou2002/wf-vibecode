@@ -27,6 +27,9 @@
 
 过程中它会顺手做两件记录:用到的术语记进项目的 `docs/术语表.md`(词条 + 对应功能),需求背景写进项目 `AGENTS.md`——以后新会话和别的 AI 能一眼接上。
 
+- 故障修复先复现、再找根因，用 `oil-bug-fix`；原因和改法已经明确的，按 T0 直接修。
+- 验证分三层：编码途中只跑秒级检查，写完跑关联快测，全量测试与构建留到合并前一次跑完。
+
 ## 三条刹车
 
 - 只在缺的信息会改变用户能看见的行为、数据安全、认证、付费或对外副作用时才问,一次问完。
@@ -53,6 +56,8 @@ npx skills add hayou2002/wf-vibecode
 ```
 
 ## 依赖
+
+故障修复另需 `oil-bug-fix`（与 `oil-*` 同一仓库）；委派是可选项，Codex 内先用原生子 Agent。
 
 `codex-vibecoding`(分档、复用、证据这些细则的来源)、`vibehub`(把口语需求翻准)、`oil-explore`、`oil-plan`、`oil-frontend`、`oil-code-review`、`oil-govern`、`oil-delegate`、`git-ship`,以及同系列的 `wf-github-ops`、`wf-design`;`webapp-testing`(可选,web 界面真浏览器验证)。按车道取用,不必全装。
 

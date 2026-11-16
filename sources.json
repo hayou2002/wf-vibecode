@@ -1,9 +1,10 @@
 {
   "workflow": "wf-vibecode",
   "title": "日常 Vibe Coding",
+  "route": "写代码、加功能、改行为、修 bug",
   "status": "active",
   "created": "2026-11-13",
-  "updated": "2026-11-14",
+  "updated": "2026-11-17",
   "sources": [
     {
       "name": "codex-vibecoding",
@@ -62,6 +63,27 @@
       }
     },
     {
+      "name": "oil-bug-fix",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "oil-oil/oil-dev-skills",
+        "subpath": "skills/oil-bug-fix",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "oil-bug-fix"
+      },
+      "recorded": "2026-11-17",
+      "uses": "车道 4 故障修复:复现、找根因、判个例/普遍、修源头、防再犯",
+      "digest": "sha256:187397c37071bd21df86bdf21cd3351f89620969bd330ffcc79f1a35007cff1e",
+      "files": {
+        "evals/evals.json": "sha256:1c759e5f7f7dc6243113ce79abeae3e324ffe2cc81f310bcd6ee14c5dbf4c91b",
+        "references/root-cause-methods.md": "sha256:dc0b9f5e01f68d8b193c672b15be955dc5aa6dfc2db2b647b64e236e07cc9ade",
+        "SKILL.md": "sha256:32af3b1d8f2d130d017c32b832f3e16afab63b1ce33399b23f7416bf4c170e1d"
+      }
+    },
+    {
       "name": "oil-code-review",
       "mode": "reference",
       "source": {
@@ -73,14 +95,14 @@
         "root": "library",
         "rel": "oil-code-review"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ③ 改完按风险评审；车道 ④ 复核修复",
-      "digest": "sha256:b19ab1853a4c457640a75b19acef63eeb63d5b78c07f8d215806e42dee21ef07",
+      "recorded": "2026-11-17",
+      "uses": "车道 3 改完按风险评审;车道 4 复核修复;车道 5 合并前把关",
+      "digest": "sha256:ce348bdd60261f8e53335c73d8e99c413bc26f9b05c99cced27bddc2d8801381",
       "files": {
-        "references/review-playbook.md": "sha256:cedcb9bf80b07d7e25d065442ac9627179bab4a8ae8e394688ee47df5228644a",
-        "scripts/review_helper.py": "sha256:b4bf2ddc988d786597bacbe9e6fc8c6d7dd4e469b36712f80f9bf85e4151a7e4",
-        "SKILL.md": "sha256:8fce5d9abc10f50a0eea35b5916c077af5794a6e57ef19ed931c7e6fc6d840e6",
-        "tests/test_review_helper.py": "sha256:d22b920a96c53666290067f2c3575aa54d249795e3cbbb425617db8d829b2cd2"
+        "references/review-playbook.md": "sha256:b361589f67de6f77e296a27e0f31d5ecc723a0845c3f2e5105ba2eb45ebfef2d",
+        "scripts/review_helper.py": "sha256:d4101b68dfc32f200bf849beef70a4e0447730f71d3e81cc0c5503ac5ef5890e",
+        "SKILL.md": "sha256:9b35916cdff258e1e9a6a56a27f5cec8259c470377195f28e858a86bb6eea19e",
+        "tests/test_review_helper.py": "sha256:8c35221b872b18b180089006631a4f4d304ab14e1db53b0c7f96a8b21987797b"
       }
     },
     {
@@ -90,25 +112,28 @@
         "kind": "github",
         "repo": "oil-oil/oil-dev-skills",
         "subpath": "skills/oil-delegate",
-        "commit": "",
+        "commit": "0669653bece5b43a5d3f02c6ab3beb28fd1172e0",
         "label": "magpie 库",
         "root": "library",
         "rel": "oil-delegate"
       },
-      "recorded": "2026-11-13",
-      "uses": "兜底：把整件事交给别的命令行 Agent 跑",
-      "digest": "sha256:9be09433d7999f210a0bc64643dcac1b0fbaaab2e6d716e46c7dec601c3ced21",
+      "recorded": "2026-11-17",
+      "uses": "可选:跨 CLI 委派;Codex 内优先原生子 Agent",
+      "config": "委派给哪个 CLI、各用途交给谁",
+      "config_where": "~/.oil-dev/preferences.md",
+      "config_status": "needs-setup",
+      "digest": "sha256:eb3612e518abae3f7d4d11807ef57bfb00ebed1ee05d62c213cd2537c1d5312c",
       "files": {
-        ".gitignore": "sha256:fa5b2d4433b835933b22140e01833a4972a0ee8532d76951286e3dd071994af0",
+        ".gitignore": "sha256:a5252d3c5f10756d75a64da9c16eba6450d5af864b730f404c723ca5972e4f47",
         "assets/readme/delegate-illustration-find-assistant.png": "sha256:c7690be272f45792212692d867ea87e59e61321f05f4182f7e6b9e5ae7d780f6",
-        "assets/readme/hero.svg": "sha256:d0c53da7b9e1fdf90994a3ca828e414cc72136ebf2d1f9b87ace903e314f0610",
-        "assets/readme/NOTICE.md": "sha256:5834ca64f97f69a07735b24544e77785b30adaaaac892e504616e9b1da01a120",
-        "LICENSE": "sha256:d44a3ca218007a85d3be41a0b76553d746e42336c7a63c6c6687d2619199c3c4",
-        "README.md": "sha256:cfa1a7cd511cb20200afded3b7114dd14529acc66670ae9bc3a2086a330db3ae",
-        "references/runners.md": "sha256:23a6e5a6116f182e26e955596bd97bbb9100ff71dda26cf8d0de0278120b5af9",
-        "scripts/delegate.py": "sha256:5317de62502306f1430583e97c774fdc02a73b3f065b93e21b0c44aaf669f3f0",
-        "SKILL.md": "sha256:1eb360ff2a7d7b08df6022055d0c688fb4932d9e9b8ab9a1817023aa849a330c",
-        "tests/test_delegate.py": "sha256:b158b8456e1c96b2ceabd8afcce51ab4e1077197dab22cf655dde49cbb9b330e"
+        "assets/readme/hero.svg": "sha256:1541da5a7d7a0d18d481e1d90cfd05e67eaaa36180ae33099127294ef86bdaaf",
+        "assets/readme/NOTICE.md": "sha256:8ada5ffce4814afecf9ce1d1b32e7549908432771d435d892468b3bce3413318",
+        "LICENSE": "sha256:1e8782bdb3aeb9dc734ea716797f676072d3bdefed117abd67fc48d73583323d",
+        "README.md": "sha256:b873c607e66dc9632a886d78f92b33486b38a900d4bf4c550503110839e18c0a",
+        "references/runners.md": "sha256:8493213836c13b6f51fda1bab1e689c4b8c3dfd8311a619f144d096985883c99",
+        "scripts/delegate.py": "sha256:bed489ffd3b74cfaff2650868093476479f74bdffb371d59b2bc6c69913e2637",
+        "SKILL.md": "sha256:4c1caa1206346f6344ea739d2bf0f3a16a6370f5bc1895cc787fad6517b67c4a",
+        "tests/test_delegate.py": "sha256:1bfaa3b13f42cca9a79869632fde207c89b7df06b0417bd89dbb96d6fa6b3838"
       }
     },
     {
@@ -118,21 +143,21 @@
         "kind": "github",
         "repo": "oil-oil/oil-dev-skills",
         "subpath": "skills/oil-explore",
-        "commit": "",
+        "commit": "41b4f85885003743a8537aa912b8b9b0cb3c92ab",
         "label": "magpie 库",
         "root": "library",
         "rel": "oil-explore"
       },
-      "recorded": "2026-11-13",
-      "uses": "底座 1 摸现场；车道 ②③④ 的只读盘点",
-      "digest": "sha256:4cee6a4a30741bc80e43dc0268185ddd5f76fed3ae86a375559620141523c151",
+      "recorded": "2026-11-17",
+      "uses": "底座 2 摸现场;车道 2/3/4 的只读盘点与可复用组件清单",
+      "digest": "sha256:296d9cad0f728fbd9af28655f7af14a64422a9bb5d49bc158a91d9d85826aae9",
       "files": {
-        "references/parallel-exploration.md": "sha256:e49c006a62354b40ecea99d9ce834df98a60b2e53e1ddaa7609da5c3f5371ff7",
-        "scripts/preferences.py": "sha256:8d700533aa2795cee4f931370a1c371827bf6dd87d3545f28521694984dc4d12",
-        "scripts/repo_map.py": "sha256:79e95f0f001443792a8d1a3c925a2b5f2e3cea83a603458a15707c4ab14b62ae",
-        "SKILL.md": "sha256:108809023840e79b20fb6e71d8bee9eae570fe39f0c99ba2408f69da866f6a01",
-        "tests/test_preferences.py": "sha256:a0cdb242e26bff67e974df0bb412c488fb5c6296c3c7bf8e90924909b29fae2b",
-        "tests/test_repo_map.py": "sha256:eb2b57cc2e09ae96ea2802d3d1f5260d8e6772c8b8725611543233f968e2e58f"
+        "references/parallel-exploration.md": "sha256:3136036a041efbf893c5a097e8f5705b3e3fbb82255b895e01d85b60923b57f6",
+        "scripts/preferences.py": "sha256:c7d7d6fa8f4c167c3317856a8451d6739b0d432e2e2cd05b3fd3bc5f61e12197",
+        "scripts/repo_map.py": "sha256:9cec075d7940031e2fc83241dbe95b162460d0ef00a3f86bf10723d61bf6235a",
+        "SKILL.md": "sha256:921bee5a73eeb800c07fcb6fbd3db6170e7a9fdaf8ba0d7ea28623b910e200a1",
+        "tests/test_preferences.py": "sha256:ff61f47a4223671f6c5299e0edc11f057ce555512b668d6bd126ef24cd7e8a27",
+        "tests/test_repo_map.py": "sha256:b5a623d11eca789d99eb52e2421c52f8ec1c401ce6d4d15aa9537236db2e8563"
       }
     },
     {
@@ -187,15 +212,16 @@
         "root": "library",
         "rel": "oil-govern"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ⑥：文档、测试分层与 worktree 治理",
-      "digest": "sha256:9e30a75b320be13f10537223a46e10e4eb96536ff5907b1e48f58eea87790706",
+      "recorded": "2026-11-17",
+      "uses": "车道 6:文档、测试分层、worktree 与分支看板治理;可定时巡检",
+      "digest": "sha256:ae1a7b4083f4594b1b92f80b8639fe30aee7148a48b0b38438065426da7fb229",
       "files": {
-        "references/dev-profile.md": "sha256:961d5b6aec8923bf6c4ab85e6605aed1c4d6f2e93b01d45918119a3becb97a3c",
-        "references/governance-guide.md": "sha256:1d8666a5c9f687a2379c1a9d623930e4a6ed456d15fef36cae2fea619f487970",
-        "scripts/audit_repo.py": "sha256:36b4bea23db824b8294c73b981e30e6420fac9ec9d366cf033971bb46378ed13",
-        "SKILL.md": "sha256:f45ed978a5379653724e20be131a97c76b00545698f5bd6d524396b814744f16",
-        "tests/test_audit_repo.py": "sha256:db98eb93fbf9a7e7cce55987c098615f44ed4d02cc1f68ea09b4ab5b999c986a"
+        "references/branch-board.md": "sha256:54c15d37920fd9b0f8df44d8ace3351b70288caa55202e2eecb65008e2084ef8",
+        "references/dev-profile.md": "sha256:e974ee4ae574c9ba12c8fe83eab994e045895bdc0399fb12d2b468de9896d899",
+        "references/governance-guide.md": "sha256:8cb06cff3d9f95bd16edd392787e2940990491cdce54571e143877794ff74ce0",
+        "scripts/audit_repo.py": "sha256:339ade020a03898fdcf0e2c112ffda28d938df319a7ef76453eb2524d435088c",
+        "SKILL.md": "sha256:3ffa067bbda5e53bb6180f9a007a2b2d1272742815a30dbe1e6898cfa7f96f2b",
+        "tests/test_audit_repo.py": "sha256:a0e81c90f61e5d32d4fcc1ddcea3c8b60c8238ecde445cd55a6e8d2f49b7986b"
       }
     },
     {
@@ -210,12 +236,14 @@
         "root": "library",
         "rel": "oil-plan"
       },
-      "recorded": "2026-11-13",
-      "uses": "底座 2 定档与边界；车道 ②③ 的验收点与分步计划",
-      "digest": "sha256:329f722534b8868d4f0e1b2e357b1210aad31b38b19016c77dbebb36001a2393",
+      "recorded": "2026-11-17",
+      "uses": "底座 3 定档与边界;车道 2/3 的验收点、分步计划与合并门禁",
+      "digest": "sha256:fdf4a7d74119fd13032a61c8573bc1271b2916856eaca381f929fe1bbc5c594b",
       "files": {
-        "references/plan-rubric.md": "sha256:1d6ad1b6590329f1ea8aa7b79e6ac4dd35b5122be0ec2d4cc7c4cb6c5ab225aa",
-        "SKILL.md": "sha256:75a2f556c4eb6ff0924f1d73a84fb8ffa2892d9f4b88cca8dfc6d8a1bf39c9ac"
+        "references/plan-rubric.md": "sha256:bddef0ef18db1e8dec23a62e287207abdb80c6d388e88472ce9910d7f75a3950",
+        "references/subagent-mode.md": "sha256:243fb0cc31ba90ebce284a2246e5ddb6db522068433c3e9ac6e61ccf71ccd662",
+        "scripts/preferences.py": "sha256:c7d7d6fa8f4c167c3317856a8451d6739b0d432e2e2cd05b3fd3bc5f61e12197",
+        "SKILL.md": "sha256:28f6de780944b2f2559a5147b73a187f97f2d7d9c545f6360dbe9478061046d8"
       }
     },
     {
@@ -273,15 +301,15 @@
         "root": "shared",
         "rel": "wf-design"
       },
-      "recorded": "2026-11-14",
+      "recorded": "2026-11-17",
       "uses": "涉及「好不好看」时转过去(另一个工作流)",
-      "digest": "sha256:0f013a2da8e83a20e46006129edb54fc55e8eb6eedd2dbcad623397e94a8a3c8",
+      "digest": "sha256:014d4f3b801ef2bedc7cef8497ebadf72f8fb7e3520d9982eb61f75c1a29ed3b",
       "files": {
         ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
-        "assets/readme/hero.svg": "sha256:72d55ed557979ceb2b3b2d9c9123bf7da263440ea20c0efe9c1769e63238198f",
+        "assets/readme/hero.svg": "sha256:a663638f0a35416b8664450fb9d7c82e127594ddeb3e05d3a626f9f1f1dc47ad",
         "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
-        "README.md": "sha256:59fea6efb654e43a3ae9890eb8af691994a988f0c96ae67c6db5e4a32d12f468",
-        "references/environment.md": "sha256:a85df5b1c00b6e64307a0aab095a33c9477e8ece5b71d03350cc7f21a09b1657",
+        "README.md": "sha256:0d025e8b42d1ae244fa8fbda9d5383ea5c287cb78d8a8123f5920f8ee1022b0a",
+        "references/environment.md": "sha256:efaa801581d0563a64aa0928fb67a2b50dc2aae97f95408eb3bf6643ca377e93",
         "references/habits.md": "sha256:aad1df77ea370c2f6bacac4862c53569dfbd964484190e32559c9b21d30ed952",
         "references/playbook.md": "sha256:99cf2b7993e12776b39fc112a65a9331ed9999bc1cd2b7da2aecb73abe1ddc29",
         "references/sops/_template.md": "sha256:51c7eed7f5ecfa3663335c9e16dc4e99fbee7c7e908206757d947f0a4bef304d",
@@ -290,8 +318,8 @@
         "scripts/design_check.py": "sha256:412c32c62594ab0b9932cc78a57a2aa256e720a4d8248b7a2fa9311f7f459045",
         "scripts/note_check.py": "sha256:efdec9b88adefdbad4f75df23574cd6299bbf7f41fbe5daf786aff489acea4b2",
         "scripts/siyuan_note.py": "sha256:e7e83e486bc0834ebfda6312c81586c5d43c081b4f0ea602d2279f065c09cf47",
-        "SKILL.md": "sha256:416bbfce037aa6d0c785476198cbf40e898681b024905844919b840f6e7208f9",
-        "sources.json": "sha256:368eb65405b2a9b4a7def2f3e6bf0ed88195bc87f29499404bc28df2eda77924"
+        "SKILL.md": "sha256:085e6cbba5f197b9f6b2b8fb281996c88b47311bfb2a6f91778a5cdc56d61072",
+        "sources.json": "sha256:8ab1b0063007015196f5520dfe663639873bb0772bd35f831f26b257b97d316d"
       }
     },
     {
@@ -303,22 +331,22 @@
         "root": "shared",
         "rel": "wf-github-ops"
       },
-      "recorded": "2026-11-14",
+      "recorded": "2026-11-17",
       "uses": "车道 5:整理本地 git、传仓库、发版本(另一个工作流,引用不重写)",
-      "digest": "sha256:4cd3b30e17240a44724507911722bccbf26f395eaca960d97cfad126289753f6",
+      "digest": "sha256:d96fa43f3b8a58873c27fdc127bc1daa805d52451a9c697ad52bade533f05f49",
       "files": {
         ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
-        "assets/readme/hero.svg": "sha256:1d6fe7c194078b1ef5240c4a7e743c9244709c7f91751a6841e942fbeec00e7e",
+        "assets/readme/hero.svg": "sha256:f7202d1b740fca895c1ffe86120b0d9db526da6cffe70b3f59ea1a93cdc578a8",
         "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
-        "README.md": "sha256:000b1c4f67340575f679b9c68dec790f7aa4b7afbb957918f7a918c10075a0e3",
-        "references/environment.md": "sha256:a884c66a85699ffcc84e942ffc8b3601698fcfb03603a980955b71508edacc12",
+        "README.md": "sha256:282ac226b72598ab697acc375d182bae601f1508a7cde0cb2c39df38b718a685",
+        "references/environment.md": "sha256:afd68421565f465510ed059805620d0f23f238707eced6354bbe3d57b42c1629",
         "references/habits.md": "sha256:15613b9d9fc6a2afb7cd25c53ab7279c3f43034b0a0db1d5a998255b6a86d7d1",
         "references/playbook.md": "sha256:500cff08f8109f764a3cdd75f5e51d0d41081ad75324c1d2f41daa7a2be8d823",
         "scripts/repo_scan.py": "sha256:f366214db8e8990f44dddf37cdca862cdc455f3e0df9f0e0c50237b910622176",
-        "SKILL.md": "sha256:d5b1bb31ee33d6b42614b01bf3d440247083365db8d0a8aebc1b597c9f867541",
-        "sources.json": "sha256:6e557fc28f151ab1e0ffc2877d1c41967aa7611aa6f70909af4f0e3df87ba88a"
+        "SKILL.md": "sha256:e61b55c080217049973054f72eaf5bcccc4205e0e6129dc4a799c5bf7678c499",
+        "sources.json": "sha256:72f04f1a4c407b98c436bfd0d1bcea257023a171e273befbfcd1e26812c961dc"
       }
     }
   ],
-  "env_digest": "0e4b7c74207e7660fda3d862d683a8d4f070165c721fc7bee17f917d36090386"
+  "env_digest": "7378b85fa66cc5e2689d25c20eb858bdf2d36567ed8ce15883709cda003567ca"
 }
