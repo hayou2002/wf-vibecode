@@ -333,17 +333,17 @@
       },
       "recorded": "2026-11-17",
       "uses": "车道 5:整理本地 git、传仓库、发版本(另一个工作流,引用不重写)",
-      "digest": "sha256:1fb99bcb852c4e13128abee141713dc36223c4a3d2855027fcb0a31d82066ba4",
+      "digest": "sha256:f0cba950f7fc8559f3c0da829cc641be200c58adac3c51324a01687b45ecbe5c",
       "files": {
         ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
         "assets/readme/hero.svg": "sha256:f7202d1b740fca895c1ffe86120b0d9db526da6cffe70b3f59ea1a93cdc578a8",
         "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
         "README.md": "sha256:282ac226b72598ab697acc375d182bae601f1508a7cde0cb2c39df38b718a685",
         "references/environment.md": "sha256:afd68421565f465510ed059805620d0f23f238707eced6354bbe3d57b42c1629",
-        "references/habits.md": "sha256:3536a1540f79b976fed3ee85f9622242da33af452c50c2a1df7f33ee08353a4d",
-        "references/playbook.md": "sha256:c1e0d5d74f412cdfa017d94d8e9cca2ac2c554300adcd4b8c28fa28311635c6e",
+        "references/habits.md": "sha256:4fdfdb2da22175ca4a0a18b0e703c676df137f1f42580be6ed4a807826d6e4aa",
+        "references/playbook.md": "sha256:ba2f94b4b51df07df7dc05e50f516a279b8fb99ff0476072623f6f3bca974ebe",
         "scripts/repo_scan.py": "sha256:f366214db8e8990f44dddf37cdca862cdc455f3e0df9f0e0c50237b910622176",
-        "SKILL.md": "sha256:f4865b501ecc61beaf1e5d75d8776cdd7abccce82619b936807c41170fc81827",
+        "SKILL.md": "sha256:111f5ea86bfdcdd343d901adf608df28392d615d519ba79650ea04c328c7e3d2",
         "sources.json": "sha256:72f04f1a4c407b98c436bfd0d1bcea257023a171e273befbfcd1e26812c961dc"
       }
     }
