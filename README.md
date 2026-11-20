@@ -59,11 +59,12 @@ npx skills add hayou2002/wf-vibecode
 
 ## 依赖
 
-故障修复另需 `oil-bug-fix`（与 `oil-*` 同一仓库）；委派是可选项，Codex 内先用原生子 Agent。
+故障修复另需 `oil-bug-fix` 0.1.1(与 `oil-*` 同一仓库);委派是可选项,Codex 内先用原生子 Agent。
 
-`codex-vibecoding`(分档、复用、证据这些细则的来源)、`vibehub`(把口语需求翻准)、`oil-explore`、`oil-plan`、`oil-frontend`、`oil-code-review`、`oil-govern`、`oil-delegate`、`git-ship`,以及同系列的 `wf-github-ops`、`wf-design`;`webapp-testing`(可选,web 界面真浏览器验证)。按车道取用,不必全装。
+`codex-vibecoding`(分档、复用、证据这些细则的来源)、`vibehub`(把口语需求翻准)、`oil-explore`、`oil-plan`、`oil-frontend`、`oil-code-review`、`oil-govern`、`oil-delegate`、`git-ship` 1.1.0,以及同系列的 `wf-github-ops`、`wf-design`;`webapp-testing`(可选,web 界面真浏览器验证)。按车道取用,不必全装。
 
 - 面改/大改另需 [project-map](https://github.com/hayou2002/project-map):按内容选配方,按场景换清纸 / 雾蓝 / 便笺;需要内部状态时再用 `arch-grower`。
+- 版本基线见 `references/environment.md`;当前对齐 `git-ship 1.1.0`、`oil-bug-fix 0.1.1`。
 
 ## 同系列
 

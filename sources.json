@@ -79,21 +79,24 @@
         "kind": "github",
         "repo": "oil-oil/git-ship",
         "subpath": "",
-        "commit": "",
+        "commit": "acd9900cc89d17aab6e391c94166c82fc62a51ed",
         "label": "magpie 库",
         "root": "library",
         "rel": "git-ship"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ⑤：用户明确要走分支加 PR 再合并时",
-      "digest": "sha256:859bb991bda6636832c3661dfd215b518c7d826ccb68c008269da257af5714a6",
+      "recorded": "2026-11-20",
+      "uses": "车道 5:用户明确要走分支加 PR 再合并时(git-ship 1.1.0:限时等待 + MERGED 强校验)",
+      "digest": "sha256:f4e174deb8cdde6dcc174a481442f0f40e6c1632d2679e025138728d68e92d86",
       "files": {
+        ".gitignore": "sha256:fa5b2d4433b835933b22140e01833a4972a0ee8532d76951286e3dd071994af0",
         "assets/readme/hero.svg": "sha256:c88cd95a3ffc32835500cb076bea2010e3c770dbc770544dc282cbca66233a50",
         "assets/readme/workflow.svg": "sha256:a3b5398ec27fb556333956504c016a2336202733f53a5cc0fc9b6aff8f8c6f51",
         "LICENSE": "sha256:d44a3ca218007a85d3be41a0b76553d746e42336c7a63c6c6687d2619199c3c4",
-        "README.md": "sha256:c8e202b36610bdd4a386bf574bdcfb58a81ecf8a5a9d2ac6cf6a58e8e3808346",
-        "README.zh-CN.md": "sha256:fc13927890d58c07d48b76b2232ab0e5129d04c9421f021be827a796a145b8cd",
-        "SKILL.md": "sha256:d8cd8ca35ea6efd0b0044c6536bc4ce044941415ada137cf0310577d0e5e92a8"
+        "README.md": "sha256:fd733201d700bcb28ec3aaf61a39815acf78e50421bab2cccd0c5d4a1bec734f",
+        "README.zh-CN.md": "sha256:82ae9db22e2e4e93fd583d8b956a7a7b07f3e6c85beca5dd09c6bb3b85d70405",
+        "scripts/wait_and_merge.py": "sha256:19f11e6323716961687a3104677d687d450a0d6cc28f028c934c65f265f94745",
+        "SKILL.md": "sha256:23a9bb0bf5b4fdf8e93c9687cb8a38d3d4dbfcd504e36503daccb6fd3d893a24",
+        "tests/test_wait_and_merge.py": "sha256:36743a8de5a04069daa8c2fe465aa6a62c163e86256f92bd95664ed1e008fb0b"
       }
     },
     {
@@ -103,18 +106,18 @@
         "kind": "github",
         "repo": "oil-oil/oil-dev-skills",
         "subpath": "skills/oil-bug-fix",
-        "commit": "",
+        "commit": "8b9cd3fb1fb40db57715a0c32487dc2ad502800e",
         "label": "magpie 库",
         "root": "library",
         "rel": "oil-bug-fix"
       },
-      "recorded": "2026-11-17",
-      "uses": "车道 4 故障修复:复现、找根因、判个例/普遍、修源头、防再犯",
-      "digest": "sha256:187397c37071bd21df86bdf21cd3351f89620969bd330ffcc79f1a35007cff1e",
+      "recorded": "2026-11-20",
+      "uses": "车道 4 故障修复:复现、找根因、判个例/普遍、修源头、防再犯(oil-bug-fix 0.1.1)",
+      "digest": "sha256:03242cdc44c99cf962be0263271afd73d2f358aab4be2cd3b564d78ef3a508e1",
       "files": {
-        "evals/evals.json": "sha256:1c759e5f7f7dc6243113ce79abeae3e324ffe2cc81f310bcd6ee14c5dbf4c91b",
-        "references/root-cause-methods.md": "sha256:dc0b9f5e01f68d8b193c672b15be955dc5aa6dfc2db2b647b64e236e07cc9ade",
-        "SKILL.md": "sha256:32af3b1d8f2d130d017c32b832f3e16afab63b1ce33399b23f7416bf4c170e1d"
+        "evals/evals.json": "sha256:535d499aa5eabbc23c4d18233b564c9f9abfcd9a7262b7ab0668e2ec4de0ea1a",
+        "references/root-cause-methods.md": "sha256:c9b088cad86fa00fd4d539fb1ebbfa9fb61c124a7bb40ac0c87cf35d1705bae9",
+        "SKILL.md": "sha256:bb3dda98b498c049aea4e7413f1db026fcde43a37d16a2d063523a4614e59c17"
       }
     },
     {
@@ -284,8 +287,11 @@
       "name": "project-map",
       "mode": "reference",
       "source": {
-        "kind": "local",
-        "label": "本机目录",
+        "kind": "github",
+        "repo": "hayou2002/project-map",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
         "root": "library",
         "rel": "project-map"
       },
@@ -427,5 +433,5 @@
       }
     }
   ],
-  "env_digest": "bd678038bd757e020b47cb2f048847d2781c421d0e22af25d47a741afe82e63f"
+  "env_digest": "f62597bdf29b00ec7bbb2bc9ba9e8216ccf8c1493d41738e442a7c52436f7819"
 }

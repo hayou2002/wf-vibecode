@@ -6,23 +6,23 @@
 
 ## 技能依赖
 
-| 技能 | 关系 | 来源 | 安装方式 |
-| --- | --- | --- | --- |
-| arch-grower | 引用 | GitHub Tobi1chi/arch-grower | npx skills add Tobi1chi/arch-grower |
-| codex-vibecoding | 引用 | GitHub hayou2002/codex-vibecoding | npx skills add hayou2002/codex-vibecoding |
-| git-ship | 引用 | GitHub oil-oil/git-ship | npx skills add oil-oil/git-ship |
-| oil-bug-fix | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-bug-fix | npx skills add oil-oil/oil-dev-skills --skill oil-bug-fix |
-| oil-code-review | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-code-review | npx skills add oil-oil/oil-dev-skills --skill oil-code-review |
-| oil-delegate | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-delegate | npx skills add oil-oil/oil-dev-skills --skill oil-delegate |
-| oil-explore | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-explore | npx skills add oil-oil/oil-dev-skills --skill oil-explore |
-| oil-frontend | 引用 | GitHub oil-oil/oil-frontend | npx skills add oil-oil/oil-frontend |
-| oil-govern | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-govern | npx skills add oil-oil/oil-dev-skills --skill oil-govern |
-| oil-plan | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-plan | npx skills add oil-oil/oil-dev-skills --skill oil-plan |
-| project-map | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
-| vibehub | 引用 | GitHub oil-oil/vibe-hub-skill › skills/vibehub | npx skills add oil-oil/vibe-hub-skill --skill vibehub |
-| webapp-testing | 引用 | GitHub anthropics/skills › skills/webapp-testing | npx skills add anthropics/skills --skill webapp-testing |
-| wf-design | 引用 | GitHub hayou2002/wf-design | npx skills add hayou2002/wf-design |
-| wf-github-ops | 引用 | GitHub hayou2002/wf-github-ops | npx skills add hayou2002/wf-github-ops |
+| 技能 | 版本 | 关系 | 来源 | 安装方式 |
+| --- | --- | --- | --- | --- |
+| arch-grower | — | 引用 | GitHub Tobi1chi/arch-grower | npx skills add Tobi1chi/arch-grower |
+| codex-vibecoding | — | 引用 | GitHub hayou2002/codex-vibecoding | npx skills add hayou2002/codex-vibecoding |
+| git-ship | 1.1.0 | 引用 | GitHub oil-oil/git-ship | npx skills add oil-oil/git-ship |
+| oil-bug-fix | 0.1.1 | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-bug-fix | npx skills add oil-oil/oil-dev-skills --skill oil-bug-fix |
+| oil-code-review | 0.4.0 | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-code-review | npx skills add oil-oil/oil-dev-skills --skill oil-code-review |
+| oil-delegate | 0.6.0 | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-delegate | npx skills add oil-oil/oil-dev-skills --skill oil-delegate |
+| oil-explore | 0.4.0 | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-explore | npx skills add oil-oil/oil-dev-skills --skill oil-explore |
+| oil-frontend | — | 引用 | GitHub oil-oil/oil-frontend | npx skills add oil-oil/oil-frontend |
+| oil-govern | 0.6.0 | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-govern | npx skills add oil-oil/oil-dev-skills --skill oil-govern |
+| oil-plan | 0.4.0 | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-plan | npx skills add oil-oil/oil-dev-skills --skill oil-plan |
+| project-map | 0.2.0 | 引用 | GitHub hayou2002/project-map | npx skills add hayou2002/project-map |
+| vibehub | — | 引用 | GitHub oil-oil/vibe-hub-skill › skills/vibehub | npx skills add oil-oil/vibe-hub-skill --skill vibehub |
+| webapp-testing | — | 引用 | GitHub anthropics/skills › skills/webapp-testing | npx skills add anthropics/skills --skill webapp-testing |
+| wf-design | 0.2.3 | 引用 | GitHub hayou2002/wf-design | npx skills add hayou2002/wf-design |
+| wf-github-ops | 0.2.5 | 引用 | GitHub hayou2002/wf-github-ops | npx skills add hayou2002/wf-github-ops |
 
 ## 自定义配置
 
