@@ -64,7 +64,7 @@
 - 定时治理还没装成自动化;`oil-govern` 支持每日巡检,但默认只报告,不自动删改。
 - `arch-grower` 自带 37 个测试在 Windows 上全过,但跑完约 167 秒;只升级时跑,不要每趟都跑。
 - `arch-grower` 的 `.arch/` 是本地状态,默认不进 git;只有 `docs/架构看板.html` 作为交付物可选提交。
-- `arch-grower` 在 Codex 里显示为「隐藏」是故意的:避免它的首次欢迎卡抢走路由,只由 `wf-vibecode` 按登记路径调用。
+- `arch-grower` 已对 Codex 显示;仍只由 `wf-vibecode` 在复杂面改/大改时按需调用,不抢默认路由。
 ## 维护备注
 
 - 这五个技能是手动覆盖 magpie 库文件升级的,`library.json` 里的哈希还没重算;以后 `magpie library skill update` 会把它们当成「本地改动」跳过,要更新得用 `--replace-edits`。
