@@ -284,20 +284,19 @@
       "name": "project-map",
       "mode": "reference",
       "source": {
-        "kind": "github",
-        "repo": "hayou2002/project-map",
-        "subpath": "",
-        "commit": "",
-        "label": "magpie 库",
+        "kind": "local",
+        "label": "本机目录",
         "root": "library",
         "rel": "project-map"
       },
       "recorded": "2026-11-20",
       "uses": "大改开头/收口:按内容选配方和皮肤,把项目结构、进度、问题画给用户看",
-      "digest": "sha256:12cc88fc697a97c6e6677f1ae6ec97d95159d3387015d14018fff285050a2c4b",
+      "digest": "sha256:cc5536191007d89ba3a5ffb946d36bf6a9e9e55d89cbcc53b21f6eeef286b06e",
       "files": {
+        ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
         "assets/paper-texture.png": "sha256:3aa411635243064ee677bb034a1ec6e0c00019fecbbf1dc6a356f8318fdbdc84",
         "assets/readme/hero.svg": "sha256:f2fedaaf899847910d0724f3d66040885765088add5f3c53574ed04a27bdf910",
+        "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
         "README.md": "sha256:8e33502f6a9dc1f16d8ba83aa69975232c9210d4fbb5c62e05153e7acf548ff2",
         "recipes/comparison.md": "sha256:a03ada1e7f01b09d3d556b24c5351236602fbaf16f35c9b15306aee1712723b3",
         "recipes/issue-board.md": "sha256:d0690b82f961a9431add5ce8a2d9659de9cc6c5f4b570cffcedfccd587fad8cd",
@@ -428,5 +427,5 @@
       }
     }
   ],
-  "env_digest": "45187b65a6f86e28d489d980d80138f9a1f442355ff9f478cce684b52a8e611b"
+  "env_digest": "bd678038bd757e020b47cb2f048847d2781c421d0e22af25d47a741afe82e63f"
 }

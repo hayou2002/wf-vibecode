@@ -18,7 +18,7 @@
 | oil-frontend | 引用 | GitHub oil-oil/oil-frontend | npx skills add oil-oil/oil-frontend |
 | oil-govern | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-govern | npx skills add oil-oil/oil-dev-skills --skill oil-govern |
 | oil-plan | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-plan | npx skills add oil-oil/oil-dev-skills --skill oil-plan |
-| project-map | 引用 | GitHub hayou2002/project-map | npx skills add hayou2002/project-map |
+| project-map | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
 | vibehub | 引用 | GitHub oil-oil/vibe-hub-skill › skills/vibehub | npx skills add oil-oil/vibe-hub-skill --skill vibehub |
 | webapp-testing | 引用 | GitHub anthropics/skills › skills/webapp-testing | npx skills add anthropics/skills --skill webapp-testing |
 | wf-design | 引用 | GitHub hayou2002/wf-design | npx skills add hayou2002/wf-design |
