@@ -2,12 +2,13 @@
 
 > 由 wf-maker 生成，请勿手改；要改就改 `sources.json` 后重跑 `wf.py env`。
 
-更新时间：2026-11-17
+更新时间：2026-11-20
 
 ## 技能依赖
 
 | 技能 | 关系 | 来源 | 安装方式 |
 | --- | --- | --- | --- |
+| arch-grower | 引用 | GitHub Tobi1chi/arch-grower | npx skills add Tobi1chi/arch-grower |
 | codex-vibecoding | 引用 | GitHub hayou2002/codex-vibecoding | npx skills add hayou2002/codex-vibecoding |
 | git-ship | 引用 | GitHub oil-oil/git-ship | npx skills add oil-oil/git-ship |
 | oil-bug-fix | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-bug-fix | npx skills add oil-oil/oil-dev-skills --skill oil-bug-fix |
@@ -17,10 +18,11 @@
 | oil-frontend | 引用 | GitHub oil-oil/oil-frontend | npx skills add oil-oil/oil-frontend |
 | oil-govern | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-govern | npx skills add oil-oil/oil-dev-skills --skill oil-govern |
 | oil-plan | 引用 | GitHub oil-oil/oil-dev-skills › skills/oil-plan | npx skills add oil-oil/oil-dev-skills --skill oil-plan |
+| project-map | 引用 | GitHub hayou2002/project-map | npx skills add hayou2002/project-map |
 | vibehub | 引用 | GitHub oil-oil/vibe-hub-skill › skills/vibehub | npx skills add oil-oil/vibe-hub-skill --skill vibehub |
 | webapp-testing | 引用 | GitHub anthropics/skills › skills/webapp-testing | npx skills add anthropics/skills --skill webapp-testing |
-| wf-design | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
-| wf-github-ops | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
+| wf-design | 引用 | GitHub hayou2002/wf-design | npx skills add hayou2002/wf-design |
+| wf-github-ops | 引用 | GitHub hayou2002/wf-github-ops | npx skills add hayou2002/wf-github-ops |
 
 ## 自定义配置
 

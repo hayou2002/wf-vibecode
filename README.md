@@ -8,7 +8,7 @@
 
 ## 怎么走
 
-**底座(默认全走,按车道裁剪)**:需求翻译 → 摸现场(看代码 + 访问用户) → 定档与边界 → 先找可复用的 → 逐片实现 → 验证说真话 → 收口交付
+**底座(默认全走,按车道裁剪)**:需求翻译 → 摸现场(看代码 + 访问用户) → 定档与边界 → 结构草图(按需) → 先找可复用的 → 逐片实现 → 验证说真话 → 收口交付
 
 **车道(选一条)**:
 
@@ -22,6 +22,8 @@
 | 6 收尾治理 | 文档、测试、worktree 乱了 |
 
 拿不准先按 2 走;做起来发现跨了多层、动了数据或权限,再升到 3。降档不等于跳过安全与回归检查。
+
+结构说不清时,先决定用户要不要看图:点改在对话里说清五句话;面改简单的给施工单,跨模块的用 `project-map`;大改在开头和收口各给一张 `project-map`,复杂时再用 `arch-grower` 在后台存图。没有默认版式,按内容选配方;内容少就直接说,不硬做卡。
 
 需求说不清的话,先把它翻成「准话」再动手;现场摸不全,就访问你一轮,只问代码里查不到的。
 
@@ -61,8 +63,11 @@ npx skills add hayou2002/wf-vibecode
 
 `codex-vibecoding`(分档、复用、证据这些细则的来源)、`vibehub`(把口语需求翻准)、`oil-explore`、`oil-plan`、`oil-frontend`、`oil-code-review`、`oil-govern`、`oil-delegate`、`git-ship`,以及同系列的 `wf-github-ops`、`wf-design`;`webapp-testing`(可选,web 界面真浏览器验证)。按车道取用,不必全装。
 
+- 面改/大改另需 [project-map](https://github.com/hayou2002/project-map):按内容选配方,按场景换清纸 / 雾蓝 / 便笺;需要内部状态时再用 `arch-grower`。
+
 ## 同系列
 
+- [project-map](https://github.com/hayou2002/project-map):把项目现状画成非专业用户一眼能懂的卡片
 - [wf-maker](https://github.com/hayou2002/wf-maker):把流程做成工作流 Skill
 - [wf-github-ops](https://github.com/hayou2002/wf-github-ops):本地 Git 整理与 GitHub 上传
 - [wf-design](https://github.com/hayou2002/wf-design):网页、演示、图片、正式文件

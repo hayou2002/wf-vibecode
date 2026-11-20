@@ -4,8 +4,42 @@
   "route": "写代码、加功能、改行为、修 bug",
   "status": "active",
   "created": "2026-11-13",
-  "updated": "2026-11-17",
+  "updated": "2026-11-20",
   "sources": [
+    {
+      "name": "arch-grower",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "Tobi1chi/arch-grower",
+        "subpath": "",
+        "commit": "955d537ac7a60a703534ef26073feba245d9214e",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "arch-grower"
+      },
+      "recorded": "2026-11-20",
+      "uses": "面改/大改:结构推演、契约、最小闭环、任务卡与架构看板",
+      "digest": "sha256:7c090c1fc7ab5deaa771ad66a1ad68cded65d0bc39628bbafa60ff2e24c7fc76",
+      "files": {
+        ".gitignore": "sha256:cae9da2dc806b0b174694dfab86f286e8ef824ecc791165f8cd934eca88b32c2",
+        "docs/examples/expense-tracker-dashboard.html": "sha256:a8e347b5ea4638e872a4b038e6265b498d87436ebefee47c2a362fddf7a019ca",
+        "docs/images/dashboard-dark.png": "sha256:80264f948f7dc0dd4af5c35070476adcf177b1083122fde251905db3fc9e6952",
+        "docs/images/dashboard-light.png": "sha256:a7849b425ded9b73739a18cf856b478142da596aad1e4b6915a12879fbbf24c7",
+        "LICENSE": "sha256:bc16756f356596c06cf56cc37a48e7fc7da0ab6d7805b4a81ecad74d772b28f2",
+        "MANIFESTO.md": "sha256:e4c9898c75e58a6e67a696f35467ff27c54d2b19c882201614e81da5cf88e7fa",
+        "README.md": "sha256:06099d53dac8ffc9b9f1741a1042decbce714911d9e2a83774097210b8ab5a22",
+        "references/execution_and_hotswap.md": "sha256:c33a2647a558cb831a4a2f8ad3fc0f41a5691d78d3d99d9ebd8561f6073d7eff",
+        "references/grounding_guide.md": "sha256:85911dde8453c80a89c68bfaae0d34300620df81cf4635689df25806d73c1976",
+        "references/onboarding_tutorial.md": "sha256:94ba0cabd8030e6d074687144c9242d628020eec9852d076e2e5f0e77738fd08",
+        "references/stage_patterns.md": "sha256:9c10905f662573e4055e4c5cab980cd0afc36b71f665c26afe402f63d385ef5c",
+        "scripts/arch_cli.py": "sha256:0cf1e291fabc9302d5d0c20d6af5cc0723ea073bcf5f73f39b456e2181dcc426",
+        "scripts/arch_mcp.py": "sha256:10e6b699cb21a3c037495fd3e23f373f641a836c7edb7b1462106a89866bd357",
+        "scripts/dashboard_template.html": "sha256:f7887b264c576ce583c4effb478ae7eb73602b3ffd7d7a281dbbca7588fd394e",
+        "SKILL.md": "sha256:1cc32d3ef655d30ebb166f97abc45b3fcb2085123dbd5c053dd1e979b59201e4",
+        "tests/test_arch_cli.py": "sha256:a5970c04b1b76214db40cbfdfabd94edfa20e67dfff0b21e06e9361c3c17f77a"
+      }
+    },
     {
       "name": "codex-vibecoding",
       "mode": "reference",
@@ -247,6 +281,46 @@
       }
     },
     {
+      "name": "project-map",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "hayou2002/project-map",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "project-map"
+      },
+      "recorded": "2026-11-20",
+      "uses": "大改开头/收口:按内容选配方和皮肤,把项目结构、进度、问题画给用户看",
+      "digest": "sha256:12cc88fc697a97c6e6677f1ae6ec97d95159d3387015d14018fff285050a2c4b",
+      "files": {
+        "assets/paper-texture.png": "sha256:3aa411635243064ee677bb034a1ec6e0c00019fecbbf1dc6a356f8318fdbdc84",
+        "assets/readme/hero.svg": "sha256:f2fedaaf899847910d0724f3d66040885765088add5f3c53574ed04a27bdf910",
+        "README.md": "sha256:8e33502f6a9dc1f16d8ba83aa69975232c9210d4fbb5c62e05153e7acf548ff2",
+        "recipes/comparison.md": "sha256:a03ada1e7f01b09d3d556b24c5351236602fbaf16f35c9b15306aee1712723b3",
+        "recipes/issue-board.md": "sha256:d0690b82f961a9431add5ce8a2d9659de9cc6c5f4b570cffcedfccd587fad8cd",
+        "recipes/module-map.md": "sha256:ef6957e4bd183bb4fcd26a409ef7926c3572ced1c14e1f197e00b201781ddf79",
+        "recipes/progress.md": "sha256:fddc5a930ead91b4ca4a23a0ce502c53e86f3387fbf6d7a28f5eefad198fdc7a",
+        "recipes/roadmap.md": "sha256:c734dd712e650578daaf132667c08402c43e0cdb868560547d0d80d1d86d9fd7",
+        "recipes/status-table.md": "sha256:bd591d71d2e9eb32e46211265b954c42c7391edcd53b69866bce791b471ceddf",
+        "references/hana-style.md": "sha256:f7edaef2ad8f18cc19f1dbb248dd7e98f5bb8405e4a420ee27050fc00da0a17e",
+        "references/house-style.md": "sha256:51d16301307425032aea5349b8504c4bd7f95bf8abb95683937112f8decd7293",
+        "references/notice.md": "sha256:5b307440ff34a151da989c70181a00733b19e8d6c8506a645776f966600207d3",
+        "references/recipe-selection.md": "sha256:115e2d1da5d2526dc596e5eb1b1d9c9975365c3f2301e5ffd9d5c37201ab4bbf",
+        "references/style-recipes.md": "sha256:6ebca2ac9b5bd045b0285cc805c924ffb4a39dd8deaeb17f05d4bc6fd3d44919",
+        "scripts/build_templates.py": "sha256:8e4b5d040f43ea258c0ce15f17cfe652ce8f89898c3dfc3772e6a75fb3846b2e",
+        "SKILL.md": "sha256:9a91569aa2ea5d26c4dfc0c7b1a0c2dd193c0208a1ec2bb85baf9a3e6b2cf57c",
+        "templates/comparison.html": "sha256:7109fb76f603c985d6f3478aa0d809d0cc90c291e9f7523ee92907d9dba0adcf",
+        "templates/issue-board.html": "sha256:138c05595c0268dcf1d93683f2e229514ed80fad62bd4b6a4d9ce0370b45e4c4",
+        "templates/module-map.html": "sha256:ef9966e8954e943f1680ff918ef000781ef968133e89fe9f26dd3bc2eb95c5e5",
+        "templates/progress.html": "sha256:293ffe70ec5a9215fa0ebc3b1ce07b653b342363374586ccb5dbb27b8c0c5ecb",
+        "templates/roadmap.html": "sha256:b0a9d326154953bd3859cdd2f53d13dd4e37695cfc411c0355481a9c4c5726e1",
+        "templates/status-table.html": "sha256:53049750ef2ab648c519d2270b4651dec76ad306a33faef8b87829f7df22852a"
+      }
+    },
+    {
       "name": "vibehub",
       "mode": "reference",
       "source": {
@@ -296,29 +370,32 @@
       "name": "wf-design",
       "mode": "reference",
       "source": {
-        "kind": "local",
-        "label": "本机目录",
-        "root": "shared",
+        "kind": "github",
+        "repo": "hayou2002/wf-design",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
         "rel": "wf-design"
       },
-      "recorded": "2026-11-17",
-      "uses": "涉及「好不好看」时转过去(另一个工作流)",
-      "digest": "sha256:014d4f3b801ef2bedc7cef8497ebadf72f8fb7e3520d9982eb61f75c1a29ed3b",
+      "recorded": "2026-11-20",
+      "uses": "车道 2/3/5:涉及好不好看时转过去(另一个工作流)",
+      "digest": "sha256:53e3a24ac1c6f25d283bdd196d801e1e5696592020852c1f71d502eb1f3c3c06",
       "files": {
         ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
         "assets/readme/hero.svg": "sha256:a663638f0a35416b8664450fb9d7c82e127594ddeb3e05d3a626f9f1f1dc47ad",
         "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
         "README.md": "sha256:0d025e8b42d1ae244fa8fbda9d5383ea5c287cb78d8a8123f5920f8ee1022b0a",
         "references/environment.md": "sha256:efaa801581d0563a64aa0928fb67a2b50dc2aae97f95408eb3bf6643ca377e93",
-        "references/habits.md": "sha256:aad1df77ea370c2f6bacac4862c53569dfbd964484190e32559c9b21d30ed952",
-        "references/playbook.md": "sha256:99cf2b7993e12776b39fc112a65a9331ed9999bc1cd2b7da2aecb73abe1ddc29",
+        "references/habits.md": "sha256:fb412c0156cd5c1830893ce0f4d3656b682282e85cc6ba981c4608b7a1dcdd93",
+        "references/playbook.md": "sha256:ab9d2c0e9e2035fcfda12943c2113d7cf7795b7d0664dc2ea703091b5cac12bc",
         "references/sops/_template.md": "sha256:51c7eed7f5ecfa3663335c9e16dc4e99fbee7c7e908206757d947f0a4bef304d",
         "references/sops/index.md": "sha256:f59cf7d1c2cb080998e9ef71631d92183eca7bd1d30e749d2ad3a50bc6724533",
         "references/sops/note-organization.md": "sha256:62744e47f59699e7f868aae54aeeff4c1b0804a803d4b8f4a34c116a1661e2df",
         "scripts/design_check.py": "sha256:412c32c62594ab0b9932cc78a57a2aa256e720a4d8248b7a2fa9311f7f459045",
         "scripts/note_check.py": "sha256:efdec9b88adefdbad4f75df23574cd6299bbf7f41fbe5daf786aff489acea4b2",
         "scripts/siyuan_note.py": "sha256:e7e83e486bc0834ebfda6312c81586c5d43c081b4f0ea602d2279f065c09cf47",
-        "SKILL.md": "sha256:085e6cbba5f197b9f6b2b8fb281996c88b47311bfb2a6f91778a5cdc56d61072",
+        "SKILL.md": "sha256:62d3c5bc6acd342421f403a236be34097248ce1120cd3d81a05cf0d7471b8fed",
         "sources.json": "sha256:8ab1b0063007015196f5520dfe663639873bb0772bd35f831f26b257b97d316d"
       }
     },
@@ -326,21 +403,24 @@
       "name": "wf-github-ops",
       "mode": "reference",
       "source": {
-        "kind": "local",
-        "label": "本机目录",
-        "root": "shared",
+        "kind": "github",
+        "repo": "hayou2002/wf-github-ops",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
         "rel": "wf-github-ops"
       },
-      "recorded": "2026-11-17",
-      "uses": "车道 5:整理本地 git、传仓库、发版本(另一个工作流,引用不重写)",
-      "digest": "sha256:f0cba950f7fc8559f3c0da829cc641be200c58adac3c51324a01687b45ecbe5c",
+      "recorded": "2026-11-20",
+      "uses": "车道 5:整理本地 git、传仓库、发版本(另一个工作流)",
+      "digest": "sha256:5be7b51a7fb2d5d95d366ed0c4eac885658db8f4a9eb74a7137dcd586268123a",
       "files": {
         ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
         "assets/readme/hero.svg": "sha256:f7202d1b740fca895c1ffe86120b0d9db526da6cffe70b3f59ea1a93cdc578a8",
         "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
         "README.md": "sha256:282ac226b72598ab697acc375d182bae601f1508a7cde0cb2c39df38b718a685",
         "references/environment.md": "sha256:afd68421565f465510ed059805620d0f23f238707eced6354bbe3d57b42c1629",
-        "references/habits.md": "sha256:4fdfdb2da22175ca4a0a18b0e703c676df137f1f42580be6ed4a807826d6e4aa",
+        "references/habits.md": "sha256:853a8b69955da828b9bd5432c59637d10062415255382267344faddc1738888e",
         "references/playbook.md": "sha256:ba2f94b4b51df07df7dc05e50f516a279b8fb99ff0476072623f6f3bca974ebe",
         "scripts/repo_scan.py": "sha256:f366214db8e8990f44dddf37cdca862cdc455f3e0df9f0e0c50237b910622176",
         "SKILL.md": "sha256:111f5ea86bfdcdd343d901adf608df28392d615d519ba79650ea04c328c7e3d2",
@@ -348,5 +428,5 @@
       }
     }
   ],
-  "env_digest": "7378b85fa66cc5e2689d25c20eb858bdf2d36567ed8ce15883709cda003567ca"
+  "env_digest": "45187b65a6f86e28d489d980d80138f9a1f442355ff9f478cce684b52a8e611b"
 }
