@@ -4,7 +4,7 @@
   "route": "写代码、加功能、改行为、修 bug",
   "status": "active",
   "created": "2026-11-13",
-  "updated": "2026-11-20",
+  "updated": "2026-11-22",
   "sources": [
     {
       "name": "arch-grower",
@@ -372,6 +372,47 @@
       }
     },
     {
+      "name": "wf-agent-team",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "hayou2002/wf-agent-team",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "wf-agent-team"
+      },
+      "recorded": "2026-11-22",
+      "uses": "可选增强：摸现场、纵向切片实现与独立审查；每批方案获准后优先 Codex Host，失败回退 Magpie wf 角色；无小队时单 Agent 正常运行",
+      "digest": "sha256:96acb4ee060591c3c8e9d1e7c840657daf7b3fe809ece4ba29ec2e629223b0e4",
+      "files": {
+        ".gitignore": "sha256:b7907b09bc6cea34dfd3a8e644e1be37bf94b54c367d39e016eea3dfbf38409b",
+        "agents/Designer.toml": "sha256:e74d93a6c03d6591ce0d641e5c45d1d2e4045615f33a94c8e93043bbec31a115",
+        "agents/Executor.toml": "sha256:98155129c1c318681fa2d66f7eaf70ddc4ed24e0eae6ccbbd1e0f8e0f51c8c06",
+        "agents/ExpertAdvisor.toml": "sha256:7ae1b14ae57e84fc52899f8c67ae399421bec0c82e301505e7b962bad41fc6df",
+        "agents/Explorer.toml": "sha256:c922a99183b7b95a298b4caf82106689cf53b70d9b805701bee20d6e1fd345af",
+        "agents/Reviewer.toml": "sha256:56936ec99f36873925f12247c9b159076b620e0707493c6b5ad8f1b543306e31",
+        "assets/readme/hero.svg": "sha256:46ea9cf90a935465fb298ca221defb9b35f88e6bd607503150128c6f73533f08",
+        "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
+        "README.md": "sha256:98b1d89c4fd2c402b09d34f285ac7a8a2485a29662a85c371eec95e421f00cfa",
+        "references/backends.md": "sha256:a9e9e0b76de46a594a92792abf6c14aed8364e497d13f34db5de161cec5cbcd0",
+        "references/default-sentinel.toml.example": "sha256:efb17dab35669dfda8cdae704f790e655c93ac9bc7706a974022a87d5fab2067",
+        "references/environment.md": "sha256:aa9b6e159c5520ae5981240bff51745e81b7778f8b30402e4821a8f67ccb110e",
+        "references/habits.md": "sha256:d3eab543e8ad792c980cf063b78dabcf9ce1f1fe81627841ca2cf0b4c15ae88f",
+        "references/playbook.md": "sha256:14b3e65fb3b899ca3975c80654f66a832ab63e825b29ed9cb9360a4a8295271a",
+        "references/roles.md": "sha256:015df43c78d3f4c0d07a1e49ff863ab110436d6df7d95a9a7c4b2580d1801a77",
+        "references/setup.md": "sha256:c21aaaf00920d9158ccb1f4946881f1debd60770b3174fa7b8dd8fecebbca2c9",
+        "references/sops/_template.md": "sha256:0b5f656d2bceabfb533a3c11b0f1e45e42eeec2f81c05e6be6fcc46ea5c211ce",
+        "references/sops/index.md": "sha256:d476c25b98e8cbf95a6f9900aeb905eeeb1dad0d7d42ac73f30ef73c5fbfa395",
+        "references/sops/vibecode.md": "sha256:f1ab87fd68c9c541a6c969d1c46f1d806cd6d7abbe70eaf36c5f2c8bcfd51975",
+        "scripts/ensure_agent_effort.py": "sha256:d23fb3df7a45a6163262e45f82da2a1151ca74622caa67455874e6cc85f10a6b",
+        "scripts/preflight.py": "sha256:56e84d02b3398022b7f7d30698ff79544e0aa8401de63142a61f8110be9ad94c",
+        "SKILL.md": "sha256:878f390841608f6dc1d8a35ac92e50b0b28e2568092fbcede812eecda9e73988",
+        "sources.json": "sha256:e16a004c18da08483f120ad148660afbd1a6c844587e332f14d207547cc58ec1"
+      }
+    },
+    {
       "name": "wf-design",
       "mode": "reference",
       "source": {
@@ -433,5 +474,5 @@
       }
     }
   ],
-  "env_digest": "f62597bdf29b00ec7bbb2bc9ba9e8216ccf8c1493d41738e442a7c52436f7819"
+  "env_digest": "7df8855e4c45fc50baa0c23d1c054264c84446f3d7f9ee56de8c5bc643732929"
 }

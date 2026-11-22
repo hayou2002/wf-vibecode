@@ -59,7 +59,8 @@ npx skills add hayou2002/wf-vibecode
 
 ## 依赖
 
-故障修复另需 `oil-bug-fix` 0.1.1(与 `oil-*` 同一仓库);委派是可选项,Codex 内先用原生子 Agent。
+故障修复另需 `oil-bug-fix` 0.1.1(与 `oil-*` 同一仓库);委派是可选项,没有 `wf-agent-team` 也能由当前单 Agent、单模型完整运行。
+确需派遣时优先 Codex Host,不可用时才回退 Magpie `wf-*` 角色;每批具体方案都由用户明确允许后才执行。
 
 `codex-vibecoding`(分档、复用、证据这些细则的来源)、`vibehub`(把口语需求翻准)、`oil-explore`、`oil-plan`、`oil-frontend`、`oil-code-review`、`oil-govern`、`oil-delegate`、`git-ship` 1.1.0,以及同系列的 `wf-github-ops`、`wf-design`;`webapp-testing`(可选,web 界面真浏览器验证)。按车道取用,不必全装。
 

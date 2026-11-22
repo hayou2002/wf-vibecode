@@ -3,7 +3,7 @@ name: wf-vibecode
 description: "日常写代码、改功能、修 bug 的工作流。触发场景:用户说做个新功能、加一页、改一处行为、修个 bug、帮我实现一下、这里不对、跑不起来,或需求表述模糊需要先对齐。流程:翻准需求 → 摸现场 → 按 T0/T1/T2 分档 → 逐片实现 → 分层验证 → 说清改了什么。故障先复现再找根因。大改开工/收口用 project-map 给非专业用户看结构;专业选型由 AI 定,只问用户能感知的后果。不用于只做视觉设计(交给 wf-design)或只整理 git(交给 wf-github-ops)。"
 license: MIT
 metadata:
-  version: "0.7.1"
+  version: "0.9.0"
 ---
 
 # 日常 Vibe Coding
@@ -89,11 +89,18 @@ metadata:
 
 ## 委派
 
-- 主 Agent 能做完的,自己做;要拆只读子 Agent,先用宿主自带的。
-- 跨 CLI 才用 `oil-delegate`,且先配好 runner;本机目前只认到 `dsh`。
-- 审查、会诊只读;派发写代码用干净工作区或独立 worktree;不放密钥。
+- 主 Agent 能做完的,自己做;`wf-agent-team` 是可选增强,不是运行依赖。没有小队、Codex Host、Magpie 或额外模型时,仍按本工作流由当前单 Agent、单模型完成。
+- 探索、实现、审查或并行协作确有收益时,先按 `wf-agent-team` 给具体派遣方案;每次实际派遣前都必须取得用户对当前批次的明确允许。
+- 派遣前先反向向用户补齐资料查不到的目标、背景、验收与边界;一次 1–3 个问题并附推荐默认值,不问纯技术细节。需求不清且没有安全默认值时,不派人代替澄清。
+- 每批返回后先汇报结果、整体进展、下一步和用户待办;继续派人必须给新方案并重新获准。只确认需求或施工单不等于允许派遣。
+- 摸现场、逐片实现、验证与收口都可以接入小队;T0 小改默认直接办理,T1/T2 不因档位自动组队。
+- `oil-explore`、`oil-plan`、`oil-code-review`、`oil-bug-fix` 继续提供专项规范;小队中的派遣统一由 `wf-agent-team` 管理,不重复自动派发。
+- 审查、会诊只读;派发写代码明确文件归属,主 Agent 最终验收;不放密钥。
+- 用户明确要求跨 CLI 时才使用 `oil-delegate`,不属于本小队的默认路径。
+- 用户拒绝或没有确认派遣时,主 Agent 直接完成,不把缺少小队当成阻塞。
 
-细节见 [system-map.md](references/system-map.md)。
+细节见 [system-map.md](references/system-map.md);场景接入、单 Agent 降级与进度模板见
+`wf-agent-team/references/sops/vibecode.md`。
 
 ## 边界
 

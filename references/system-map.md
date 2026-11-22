@@ -10,7 +10,7 @@
 | 1 工作流 | `wf-vibecode`、`wf-design`、`wf-github-ops`、`wf-newapi-manager`、`wf-maker` | 每个 wf- 自己 |
 | 2 零件 | `oil-explore`、`oil-plan`、`oil-delegate`、`oil-code-review`、`oil-bug-fix`、`oil-govern`、`oil-frontend`、`vibehub`、`webapp-testing`、`git-ship`、`arch-grower`(工具,不单独路由)、`project-map`(按内容选配方) | 上游仓库 + magpie |
 | 3 项目契约 | 项目 `AGENTS.md` 的 `oil-dev` 小节、`docs/术语表.md`、`docs/` 方案 | 项目自己 |
-| 4 宿主能力 | Codex 原生子 Agent、shell、真实浏览器 | 宿主提供 |
+| 4 宿主能力 | Codex Host 派遣、Magpie `wf-*` 回退、shell、真实浏览器 | 宿主/本机提供 |
 
 ## 一次改动怎么流
 
@@ -29,7 +29,7 @@
 
 | 事情 | 交给谁 | 不交给谁 |
 | --- | --- | --- |
-| 只读摸清调用链、找可复用组件 | `oil-explore` + 宿主只读子 Agent | 主 Agent 从头读十几个大文件 |
+| 只读摸清调用链、找可复用组件 | `oil-explore`；有收益时经 `wf-agent-team` 派只读子 Agent | 主 Agent 从头读十几个大文件 |
 | 写人看得懂的方案、定验收点 | `oil-plan` | 直接开写 |
 | 结构推演、契约、切任务卡(内部) | `arch-grower`(只在复杂面改/大改时用) | 点改、改法已清楚的小活、把图直接给用户 |
 | 把项目结构、进度、问题画给用户看 | `project-map`(先选配方) | 固定模板硬套、把 graph.json 直接给用户 |
@@ -41,12 +41,16 @@
 
 ## 委派与子 Agent
 
-- 先看宿主:Codex 用原生子 Agent,Claude 用 Task;只读任务优先拆出去,只回简报。
-- 跨 CLI 才用 `oil-delegate`;先在它那里 onboarding 选 runner。本机只探测到 `dsh`。
+- 委派统一经过 `wf-agent-team`:主 Agent 先补必要背景并说明当前批次的任务、收益与进度,
+  用户对这批明确允许后才派;后续每批重新确认,其他技能不绕过这道确认。
+- `wf-agent-team` 是可选增强。没有它或派遣未获准时,主 Agent 按本工作流独立完成,单模型也可运行。
+- 主 Agent 当前模型不决定是否可用小队;角色模型由全局配置固定,主 Agent 负责验收。
+- 跨 CLI 不属于默认小队;只有用户明确要求时才用 `oil-delegate`,并先在它那里 onboarding 选 runner。
 - 写代码的任务:工作区干净或独立 worktree;审查、会诊只读,回来核对 `git status`。
-- 大改里只有 3 个以上可并行节点、或节点要动高风险接口时,才用 `arch-grower` 的 `export-task` 切给子 Agent;其余主 Agent 直接写。
+- 大改里只有独立纵向切片确有协作收益时才提派遣方案;需要隔离时用 `arch-grower` 的
+  `export-task` 或独立 worktree。每批获准后才派,其余主 Agent 直接写。
 - 任务描述会发给外部模型,可能计费;不放密钥和隐私数据。
-- 个人偏好写 `~/.oil-dev/preferences.md`,按宿主分节;写角色不写型号。
+- Codex 原生角色与型号写 `wf-agent-team/references/habits.md` 和它的全局角色目录;其他 oil-dev 个人偏好仍写 `~/.oil-dev/preferences.md`。
 
 ## 升级后的接线清单
 
@@ -59,7 +63,8 @@
 
 ## 已知缺口
 
-- `oil-delegate` 在本机只探测到 `dsh`;要委派给 Codex 或 Claude,得先装对应 CLI 并配置 runner。Codex 内优先用原生子 Agent。
+- `wf-agent-team` 优先走 Codex Host,确认不可用时回退 Magpie `wf-*` 自定义角色;
+  不使用 Codex 自带无前缀角色。`oil-delegate` 保留给用户明确要求的跨 CLI 场景。
 - `oil-delegate` 的单元测试在 Windows 上因 POSIX 测试桩失败;扫描和调用逻辑可用,但升级后要手动确认一次。
 - 定时治理还没装成自动化;`oil-govern` 支持每日巡检,但默认只报告,不自动删改。
 - `arch-grower` 自带 37 个测试在 Windows 上全过,但跑完约 167 秒;只升级时跑,不要每趟都跑。
