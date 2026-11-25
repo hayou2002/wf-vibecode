@@ -407,8 +407,8 @@
         "rel": "wf-agent-team"
       },
       "recorded": "2026-11-25",
-      "uses": "可选增强：日常通用队、中文阶段沟通、模型证据、项目档案、逐片审查与单切片执行；每批获准后派遣",
-      "digest": "sha256:18b4772eddc8eb16f1f7f1a83bb2a25d876e7218e96d404ea682c3ac43ce2f2b",
+      "uses": "可选增强：默认方案二、中文阶段沟通、设计执行交接、模型证据、项目档案与逐片审查；每批获准后派遣",
+      "digest": "sha256:1652463cc36cf9346329cd352e655755439454478cefc470efdfa51cc6ec6702",
       "files": {
         ".gitignore": "sha256:e0ac0c1739ae11953937bc94422ad5a44177151b84e430eaa09d41928fd8fd9b",
         "agents/Designer.toml": "sha256:e74d93a6c03d6591ce0d641e5c45d1d2e4045615f33a94c8e93043bbec31a115",
@@ -419,16 +419,16 @@
         "assets/readme/hero.svg": "sha256:46ea9cf90a935465fb298ca221defb9b35f88e6bd607503150128c6f73533f08",
         "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
         "README.md": "sha256:4e01e4c862cf063e49aeba6c1e09b9dddbfe6958e35e72c027bbdb725909768a",
-        "references/backends.md": "sha256:2fd1a6fc40c87a216d8ab53b3102530f45254c359e17892f26a4338d9baaebed",
+        "references/backends.md": "sha256:3f6060fcaf9467f2e09195eeae290c4ba7dd70bb7a9e3af65266825b8290439d",
         "references/communication.md": "sha256:055266fc2573da5a5b06028131927d6a08c71c41fbc09b34dc95b825b9c7113b",
         "references/default-sentinel.toml.example": "sha256:efb17dab35669dfda8cdae704f790e655c93ac9bc7706a974022a87d5fab2067",
         "references/environment.md": "sha256:a3270c17997999ae15fa5dca7d4fe594ed7bab517f67ac2178f654453c8a43d5",
         "references/habits/README.md": "sha256:2bd7e45e46fdeb70140cbd3cb4a4a2a17e631f20d1e375c29b53d4dd0b117810",
-        "references/habits/teams.local.json": "sha256:3bc5700baee8ce9c1b1abc7479c98c0eb0f15ab3471a291d8c2e3571ec0ae697",
-        "references/habits.md": "sha256:1bdc401cd93d39d9408252b46e92bd6345f29c19e49158c823a6f8c4eabc3f84",
+        "references/habits/teams.local.json": "sha256:6259328fe68ecbdf424bf3696cc69efdc4fc1e5efd3ecacd992a3b05625c425a",
+        "references/habits.md": "sha256:01b0f00174aaa7f936b80d24c241b9ac47191ab70b876894a6e147c10cec172f",
         "references/kimi-mcp.md": "sha256:bb06d24a08ffca3f086e0a0dccf243f23e5f06eebd23a5104c734069ba0a6aa2",
         "references/model-evidence.md": "sha256:8979e58dc8fe7fa312fbbcf29e7dc4a2dadffca94357ecfac2bf94e29ae43a65",
-        "references/playbook.md": "sha256:709290266da8c3cdbcdc7b23d7592a70bc8fa28cdf9069baa0015d178da6dfeb",
+        "references/playbook.md": "sha256:47c8e5deeb411dc6bcf1d781c97acb8747604c3bd0686b8402155231b5cc08ac",
         "references/project-management.md": "sha256:1fa8229b5f2005bce86d3c23ddcef3fc3cce95364a5f7c1736db3e1e97db73e2",
         "references/roles.md": "sha256:013e3b78f19810576b16af684f2dd6a7f807db3dd73273f9d3b718825050a208",
         "references/setup.md": "sha256:6ac47ec42d384a614b989a83cbeaed08784bee813fadb6eb3f8186c978bd93d4",
@@ -440,12 +440,12 @@
         "scripts/check_handoff.py": "sha256:f6b83ee86607eb8405c3127f5531cba628629246c827382f0cb9318e577df656",
         "scripts/ensure_agent_effort.py": "sha256:d23fb3df7a45a6163262e45f82da2a1151ca74622caa67455874e6cc85f10a6b",
         "scripts/ensure_kimi_mcp.py": "sha256:9738f92a59e91cb26827f2e40f5beeca73295a965d07c57e219f43a019f5409f",
-        "scripts/preflight.py": "sha256:268a3223963918118ee7428cb507bd8dcf91055b8a94b221f5f67aa5e2063b31",
-        "scripts/team_tools.py": "sha256:1ca790668292fbebc27fdd6f6afbe8841bbedbcba3af85a961374c4c677592fb",
-        "SKILL.md": "sha256:f3decfa5fafd984112b596d757ece0ab5b9c1742fbfcce2cbc065fe3045def0e",
+        "scripts/preflight.py": "sha256:ca09aa18a26f4ea0ca2cd6807b526792750a1692591f78b4f33682c4f9d3c19b",
+        "scripts/team_tools.py": "sha256:2bc1fda3cf676ecb6865e873fddec42abacddda14c5e16fb70e2c508ca6e0f10",
+        "SKILL.md": "sha256:39bfa8cf3b4d349d12c4d4a912cb2149d4f88e987268678e56fab332641d78d3",
         "sources.json": "sha256:03a78d71942ad4679e08966837a8a9ea51fafbb86df3aa231f5afad07dc8a783",
         "tests/test_ensure_kimi_mcp.py": "sha256:36d26349dd83024d322d50fd4674f36a44dfd74a56559cfa2de7195f0e47e183",
-        "tests/test_team_tools.py": "sha256:7b4bd1dac541d2947337f78c96fc78b8abd7181343c53e921b5e672599fbd40b"
+        "tests/test_team_tools.py": "sha256:74e7c02be53a8cb86bef9d92c556196ba8cc876623968f33532e148f6e145b87"
       }
     },
     {
@@ -494,5 +494,5 @@
       }
     }
   ],
-  "env_digest": "32644e45c68c26b8847a530531cd37d48027b96f6c0b5941a725a7187c54d64b"
+  "env_digest": "151d5a4d7a0b20c03441e95bb93b48429c5841c40cedc8f38f9d019a5960e5f8"
 }

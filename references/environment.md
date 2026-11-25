@@ -22,7 +22,7 @@
 | project-map | 0.2.0 | 引用 | GitHub hayou2002/project-map | npx skills add hayou2002/project-map |
 | vibehub | — | 引用 | GitHub oil-oil/vibe-hub-skill › skills/vibehub | npx skills add oil-oil/vibe-hub-skill --skill vibehub |
 | webapp-testing | — | 引用 | GitHub anthropics/skills › skills/webapp-testing | npx skills add anthropics/skills --skill webapp-testing |
-| wf-agent-team | 0.8.0 | 引用 | GitHub hayou2002/wf-agent-team | npx skills add hayou2002/wf-agent-team |
+| wf-agent-team | 0.9.0 | 引用 | GitHub hayou2002/wf-agent-team | npx skills add hayou2002/wf-agent-team |
 | wf-design | 0.7.0 | 引用 | GitHub hayou2002/wf-design | npx skills add hayou2002/wf-design |
 | wf-github-ops | 0.3.0 | 引用 | GitHub hayou2002/wf-github-ops | npx skills add hayou2002/wf-github-ops |
 
