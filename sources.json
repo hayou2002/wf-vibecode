@@ -4,7 +4,7 @@
   "route": "写代码、加功能、改行为、修 bug",
   "status": "active",
   "created": "2026-11-13",
-  "updated": "2026-11-22",
+  "updated": "2026-11-25",
   "sources": [
     {
       "name": "arch-grower",
@@ -70,6 +70,29 @@
         "SKILL.md": "sha256:265888133dee0977cbfeb58b6d0b13ff8f3d013b33fce365a1387a2bc930de68",
         "templates/brief.md": "sha256:153c9003759e3661beace9e2f7eec195e290f68ac7ecae6b14b073c099d3b6fe",
         "templates/delivery.md": "sha256:0bca69369e69c8c02f94768f5ba61ff3365b5ebe1b13fd159824acb72ec2d9de"
+      }
+    },
+    {
+      "name": "development-reference-library",
+      "mode": "reference",
+      "source": {
+        "kind": "local",
+        "label": "本机目录",
+        "root": "codex",
+        "rel": "development-reference-library"
+      },
+      "recorded": "2026-11-25",
+      "uses": "步骤 4 与 T2：项目内无答案时按开发问题检索官方文档、聚合入口、Skill、MCP/CLI/API；不默认安装或配置服务",
+      "digest": "sha256:4652bf8249fa5daa0577f3647676ba130d725089e85d04dc88271e61039f403b",
+      "files": {
+        ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
+        "assets/readme/hero.svg": "sha256:755abbf5717fccf2b3777199e196976d83d5191348eb187009371bc28bbedee8",
+        "catalog.json": "sha256:a831d1ca54f7406f18b85335b06b363080e12d5a4c15b0bbea2294e5b546e9e2",
+        "LICENSE": "sha256:1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685",
+        "README.md": "sha256:c7dfb3529db47341b835ffc7e144e07fc401bf155f08ca2d75119f182437a1cd",
+        "scripts/references.py": "sha256:1084ec9753d63edf0973fd81927e8ffed81a80fc2d426b51f771dba38160b1ad",
+        "SKILL.md": "sha256:732c32bc8e88254bb4dc273d9e6de82df79dbef930a542dfa8aa9a31f8e04407",
+        "tests/test_references.py": "sha256:20e402fd8e5eff56fbea2624ce8603c78f01b51a250c53119bd3dbfec63ba789"
       }
     },
     {
@@ -383,11 +406,11 @@
         "root": "library",
         "rel": "wf-agent-team"
       },
-      "recorded": "2026-11-22",
-      "uses": "可选增强：摸现场、纵向切片实现与独立审查；每批方案获准后优先 Codex Host，失败回退 Magpie wf 角色；无小队时单 Agent 正常运行",
-      "digest": "sha256:96acb4ee060591c3c8e9d1e7c840657daf7b3fe809ece4ba29ec2e629223b0e4",
+      "recorded": "2026-11-25",
+      "uses": "可选增强：日常通用队、中文阶段沟通、模型证据、项目档案、逐片审查与单切片执行；每批获准后派遣",
+      "digest": "sha256:18b4772eddc8eb16f1f7f1a83bb2a25d876e7218e96d404ea682c3ac43ce2f2b",
       "files": {
-        ".gitignore": "sha256:b7907b09bc6cea34dfd3a8e644e1be37bf94b54c367d39e016eea3dfbf38409b",
+        ".gitignore": "sha256:e0ac0c1739ae11953937bc94422ad5a44177151b84e430eaa09d41928fd8fd9b",
         "agents/Designer.toml": "sha256:e74d93a6c03d6591ce0d641e5c45d1d2e4045615f33a94c8e93043bbec31a115",
         "agents/Executor.toml": "sha256:98155129c1c318681fa2d66f7eaf70ddc4ed24e0eae6ccbbd1e0f8e0f51c8c06",
         "agents/ExpertAdvisor.toml": "sha256:7ae1b14ae57e84fc52899f8c67ae399421bec0c82e301505e7b962bad41fc6df",
@@ -395,21 +418,34 @@
         "agents/Reviewer.toml": "sha256:56936ec99f36873925f12247c9b159076b620e0707493c6b5ad8f1b543306e31",
         "assets/readme/hero.svg": "sha256:46ea9cf90a935465fb298ca221defb9b35f88e6bd607503150128c6f73533f08",
         "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
-        "README.md": "sha256:98b1d89c4fd2c402b09d34f285ac7a8a2485a29662a85c371eec95e421f00cfa",
-        "references/backends.md": "sha256:a9e9e0b76de46a594a92792abf6c14aed8364e497d13f34db5de161cec5cbcd0",
+        "README.md": "sha256:4e01e4c862cf063e49aeba6c1e09b9dddbfe6958e35e72c027bbdb725909768a",
+        "references/backends.md": "sha256:2fd1a6fc40c87a216d8ab53b3102530f45254c359e17892f26a4338d9baaebed",
+        "references/communication.md": "sha256:055266fc2573da5a5b06028131927d6a08c71c41fbc09b34dc95b825b9c7113b",
         "references/default-sentinel.toml.example": "sha256:efb17dab35669dfda8cdae704f790e655c93ac9bc7706a974022a87d5fab2067",
-        "references/environment.md": "sha256:aa9b6e159c5520ae5981240bff51745e81b7778f8b30402e4821a8f67ccb110e",
-        "references/habits.md": "sha256:d3eab543e8ad792c980cf063b78dabcf9ce1f1fe81627841ca2cf0b4c15ae88f",
-        "references/playbook.md": "sha256:14b3e65fb3b899ca3975c80654f66a832ab63e825b29ed9cb9360a4a8295271a",
-        "references/roles.md": "sha256:015df43c78d3f4c0d07a1e49ff863ab110436d6df7d95a9a7c4b2580d1801a77",
-        "references/setup.md": "sha256:c21aaaf00920d9158ccb1f4946881f1debd60770b3174fa7b8dd8fecebbca2c9",
+        "references/environment.md": "sha256:a3270c17997999ae15fa5dca7d4fe594ed7bab517f67ac2178f654453c8a43d5",
+        "references/habits/README.md": "sha256:2bd7e45e46fdeb70140cbd3cb4a4a2a17e631f20d1e375c29b53d4dd0b117810",
+        "references/habits/teams.local.json": "sha256:3bc5700baee8ce9c1b1abc7479c98c0eb0f15ab3471a291d8c2e3571ec0ae697",
+        "references/habits.md": "sha256:1bdc401cd93d39d9408252b46e92bd6345f29c19e49158c823a6f8c4eabc3f84",
+        "references/kimi-mcp.md": "sha256:bb06d24a08ffca3f086e0a0dccf243f23e5f06eebd23a5104c734069ba0a6aa2",
+        "references/model-evidence.md": "sha256:8979e58dc8fe7fa312fbbcf29e7dc4a2dadffca94357ecfac2bf94e29ae43a65",
+        "references/playbook.md": "sha256:709290266da8c3cdbcdc7b23d7592a70bc8fa28cdf9069baa0015d178da6dfeb",
+        "references/project-management.md": "sha256:1fa8229b5f2005bce86d3c23ddcef3fc3cce95364a5f7c1736db3e1e97db73e2",
+        "references/roles.md": "sha256:013e3b78f19810576b16af684f2dd6a7f807db3dd73273f9d3b718825050a208",
+        "references/setup.md": "sha256:6ac47ec42d384a614b989a83cbeaed08784bee813fadb6eb3f8186c978bd93d4",
         "references/sops/_template.md": "sha256:0b5f656d2bceabfb533a3c11b0f1e45e42eeec2f81c05e6be6fcc46ea5c211ce",
-        "references/sops/index.md": "sha256:d476c25b98e8cbf95a6f9900aeb905eeeb1dad0d7d42ac73f30ef73c5fbfa395",
-        "references/sops/vibecode.md": "sha256:f1ab87fd68c9c541a6c969d1c46f1d806cd6d7abbe70eaf36c5f2c8bcfd51975",
+        "references/sops/handoff.md": "sha256:10d968bcd69ae37f320d47427dd35f147b744c8c1ab92cea8eb1c350656c4ec5",
+        "references/sops/index.md": "sha256:41430c5e45aafc56aa39b2e4bfd110b6a79386d87da5e3bbce22249f07b52071",
+        "references/sops/vibecode.md": "sha256:602f6b93d34f51384cfe92cf3056b87d45adb4818a44a8eada031239d939ca97",
+        "references/teams.example.json": "sha256:eef9888e04be905462c7880ae63d5ac87df66e2a537e864c16bda362f7ebd05a",
+        "scripts/check_handoff.py": "sha256:f6b83ee86607eb8405c3127f5531cba628629246c827382f0cb9318e577df656",
         "scripts/ensure_agent_effort.py": "sha256:d23fb3df7a45a6163262e45f82da2a1151ca74622caa67455874e6cc85f10a6b",
-        "scripts/preflight.py": "sha256:56e84d02b3398022b7f7d30698ff79544e0aa8401de63142a61f8110be9ad94c",
-        "SKILL.md": "sha256:878f390841608f6dc1d8a35ac92e50b0b28e2568092fbcede812eecda9e73988",
-        "sources.json": "sha256:e16a004c18da08483f120ad148660afbd1a6c844587e332f14d207547cc58ec1"
+        "scripts/ensure_kimi_mcp.py": "sha256:9738f92a59e91cb26827f2e40f5beeca73295a965d07c57e219f43a019f5409f",
+        "scripts/preflight.py": "sha256:268a3223963918118ee7428cb507bd8dcf91055b8a94b221f5f67aa5e2063b31",
+        "scripts/team_tools.py": "sha256:1ca790668292fbebc27fdd6f6afbe8841bbedbcba3af85a961374c4c677592fb",
+        "SKILL.md": "sha256:f3decfa5fafd984112b596d757ece0ab5b9c1742fbfcce2cbc065fe3045def0e",
+        "sources.json": "sha256:03a78d71942ad4679e08966837a8a9ea51fafbb86df3aa231f5afad07dc8a783",
+        "tests/test_ensure_kimi_mcp.py": "sha256:36d26349dd83024d322d50fd4674f36a44dfd74a56559cfa2de7195f0e47e183",
+        "tests/test_team_tools.py": "sha256:7b4bd1dac541d2947337f78c96fc78b8abd7181343c53e921b5e672599fbd40b"
       }
     },
     {
@@ -424,26 +460,10 @@
         "root": "library",
         "rel": "wf-design"
       },
-      "recorded": "2026-11-20",
-      "uses": "车道 2/3/5:涉及好不好看时转过去(另一个工作流)",
-      "digest": "sha256:53e3a24ac1c6f25d283bdd196d801e1e5696592020852c1f71d502eb1f3c3c06",
-      "files": {
-        ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
-        "assets/readme/hero.svg": "sha256:a663638f0a35416b8664450fb9d7c82e127594ddeb3e05d3a626f9f1f1dc47ad",
-        "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
-        "README.md": "sha256:0d025e8b42d1ae244fa8fbda9d5383ea5c287cb78d8a8123f5920f8ee1022b0a",
-        "references/environment.md": "sha256:efaa801581d0563a64aa0928fb67a2b50dc2aae97f95408eb3bf6643ca377e93",
-        "references/habits.md": "sha256:fb412c0156cd5c1830893ce0f4d3656b682282e85cc6ba981c4608b7a1dcdd93",
-        "references/playbook.md": "sha256:ab9d2c0e9e2035fcfda12943c2113d7cf7795b7d0664dc2ea703091b5cac12bc",
-        "references/sops/_template.md": "sha256:51c7eed7f5ecfa3663335c9e16dc4e99fbee7c7e908206757d947f0a4bef304d",
-        "references/sops/index.md": "sha256:f59cf7d1c2cb080998e9ef71631d92183eca7bd1d30e749d2ad3a50bc6724533",
-        "references/sops/note-organization.md": "sha256:62744e47f59699e7f868aae54aeeff4c1b0804a803d4b8f4a34c116a1661e2df",
-        "scripts/design_check.py": "sha256:412c32c62594ab0b9932cc78a57a2aa256e720a4d8248b7a2fa9311f7f459045",
-        "scripts/note_check.py": "sha256:efdec9b88adefdbad4f75df23574cd6299bbf7f41fbe5daf786aff489acea4b2",
-        "scripts/siyuan_note.py": "sha256:e7e83e486bc0834ebfda6312c81586c5d43c081b4f0ea602d2279f065c09cf47",
-        "SKILL.md": "sha256:62d3c5bc6acd342421f403a236be34097248ce1120cd3d81a05cf0d7471b8fed",
-        "sources.json": "sha256:8ab1b0063007015196f5520dfe663639873bb0772bd35f831f26b257b97d316d"
-      }
+      "recorded": "2026-11-25",
+      "uses": "车道 2/3：提供真实业务、内容和状态，接收视觉与交互契约；真实功能与数据回本流程",
+      "digest": "sha256:035d40123b6bbe037140b7889901066b27ed2720bbd6b7b96e6da951caea58ef",
+      "file_count": 78
     },
     {
       "name": "wf-github-ops",
@@ -457,22 +477,22 @@
         "root": "library",
         "rel": "wf-github-ops"
       },
-      "recorded": "2026-11-20",
-      "uses": "车道 5:整理本地 git、传仓库、发版本(另一个工作流)",
-      "digest": "sha256:5be7b51a7fb2d5d95d366ed0c4eac885658db8f4a9eb74a7137dcd586268123a",
+      "recorded": "2026-11-25",
+      "uses": "车道 5：本地 git 整理、上传仓库与 Release；用户明确授权后执行",
+      "digest": "sha256:40afcf1e1243cc123cdeb1e31c9ebe3f1eac7ae425909b6ec02a82ea01cd48a2",
       "files": {
         ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
         "assets/readme/hero.svg": "sha256:f7202d1b740fca895c1ffe86120b0d9db526da6cffe70b3f59ea1a93cdc578a8",
         "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
         "README.md": "sha256:282ac226b72598ab697acc375d182bae601f1508a7cde0cb2c39df38b718a685",
-        "references/environment.md": "sha256:afd68421565f465510ed059805620d0f23f238707eced6354bbe3d57b42c1629",
+        "references/environment.md": "sha256:ff5f981a90d38dc90a19bc697493720e9678248196a49250beb2cc555f523294",
         "references/habits.md": "sha256:853a8b69955da828b9bd5432c59637d10062415255382267344faddc1738888e",
         "references/playbook.md": "sha256:ba2f94b4b51df07df7dc05e50f516a279b8fb99ff0476072623f6f3bca974ebe",
         "scripts/repo_scan.py": "sha256:f366214db8e8990f44dddf37cdca862cdc455f3e0df9f0e0c50237b910622176",
-        "SKILL.md": "sha256:111f5ea86bfdcdd343d901adf608df28392d615d519ba79650ea04c328c7e3d2",
-        "sources.json": "sha256:72f04f1a4c407b98c436bfd0d1bcea257023a171e273befbfcd1e26812c961dc"
+        "SKILL.md": "sha256:939d3193b744caeb1b257f1d6b10eae24d28826449973426784a876cb0d88030",
+        "sources.json": "sha256:f8b2a05327735df641483e73d754ae7e203e82f64bc6627b741e02b1b84f860e"
       }
     }
   ],
-  "env_digest": "7df8855e4c45fc50baa0c23d1c054264c84446f3d7f9ee56de8c5bc643732929"
+  "env_digest": "32644e45c68c26b8847a530531cd37d48027b96f6c0b5941a725a7187c54d64b"
 }

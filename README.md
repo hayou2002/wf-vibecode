@@ -8,7 +8,7 @@
 
 ## 怎么走
 
-**底座(默认全走,按车道裁剪)**:需求翻译 → 摸现场(看代码 + 访问用户) → 定档与边界 → 结构草图(按需) → 先找可复用的 → 逐片实现 → 验证说真话 → 收口交付
+**底座(默认全走,按车道裁剪)**:需求翻译 → 摸现场与查库 → 定档与边界 → 结构草图(按需) → 先找可复用的 → 骨架与逐片实现 → 验证说真话 → 收口交付
 
 **车道(选一条)**:
 
@@ -31,6 +31,8 @@
 
 - 故障修复先复现、再找根因，用 `oil-bug-fix`；原因和改法已经明确的，按 T0 直接修。
 - 验证分三层：编码途中只跑秒级检查，写完跑关联快测，全量测试与构建留到合并前一次跑完。
+- T2 从零开发先搭可运行骨架，再走通一条真实数据与权限链路；数据、秘密、预览和回滚清单见 `references/product-delivery.md`。
+- `development-reference-library` 按开发问题提供官方文档、聚合服务、Skill、MCP/CLI/API 和案例入口；不默认安装、登录或创建云资源。
 
 ## 三条刹车
 
@@ -72,7 +74,7 @@ npx skills add hayou2002/wf-vibecode
 - [project-map](https://github.com/hayou2002/project-map):把项目现状画成非专业用户一眼能懂的卡片
 - [wf-maker](https://github.com/hayou2002/wf-maker):把流程做成工作流 Skill
 - [wf-github-ops](https://github.com/hayou2002/wf-github-ops):本地 Git 整理与 GitHub 上传
-- [wf-design](https://github.com/hayou2002/wf-design):网页、演示、图片、正式文件
+- [wf-design](https://github.com/hayou2002/wf-design):网页、界面、交互与视觉设计；真实业务和数据集成本工作流负责
 
 ## 许可
 
